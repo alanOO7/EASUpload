@@ -1,200 +1,295 @@
-//
-// 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.11 生成的
-// 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// 在重新编译源模式时, 对此文件的所有修改都将丢失。
-// 生成时间: 2021.08.03 时间 09:20:50 PM CST 
-//
-
+/**
+ * WSContext.java
+ *
+ * This file was auto-generated from WSDL
+ * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
+ */
 
 package com.el.easupload.ws;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlType;
+public class WSContext  implements java.io.Serializable {
+    private int dbType;
 
+    private String dcName;
 
-/**
- * <p>WSContext complex type的 Java 类。
- * 
- * <p>以下模式片段指定包含在此类中的预期内容。
- * 
- * <pre>
- * &lt;complexType name="WSContext"&gt;
- *   &lt;complexContent&gt;
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
- *       &lt;sequence&gt;
- *         &lt;element name="dbType" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="dcName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="sessionId" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="slnName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="userName" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *       &lt;/sequence&gt;
- *     &lt;/restriction&gt;
- *   &lt;/complexContent&gt;
- * &lt;/complexType&gt;
- * </pre>
- * 
- * 
- */
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "WSContext", propOrder = {
-    "dbType",
-    "dcName",
-    "password",
-    "sessionId",
-    "slnName",
-    "userName"
-})
-public class WSContext {
+    private String password;
 
-    protected int dbType;
-    @XmlElement(required = true, nillable = true)
-    protected String dcName;
-    @XmlElement(required = true, nillable = true)
-    protected String password;
-    @XmlElement(required = true, nillable = true)
-    protected String sessionId;
-    @XmlElement(required = true, nillable = true)
-    protected String slnName;
-    @XmlElement(required = true, nillable = true)
-    protected String userName;
+    private String sessionId;
+
+    private String slnName;
+
+    private String userName;
+
+    public WSContext() {
+    }
+
+    public WSContext(
+           int dbType,
+           String dcName,
+           String password,
+           String sessionId,
+           String slnName,
+           String userName) {
+           this.dbType = dbType;
+           this.dcName = dcName;
+           this.password = password;
+           this.sessionId = sessionId;
+           this.slnName = slnName;
+           this.userName = userName;
+    }
+
 
     /**
-     * 获取dbType属性的值。
+     * Gets the dbType value for this WSContext.
      * 
+     * @return dbType
      */
     public int getDbType() {
         return dbType;
     }
 
-    /**
-     * 设置dbType属性的值。
-     * 
-     */
-    public void setDbType(int value) {
-        this.dbType = value;
-    }
 
     /**
-     * 获取dcName属性的值。
+     * Sets the dbType value for this WSContext.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @param dbType
+     */
+    public void setDbType(int dbType) {
+        this.dbType = dbType;
+    }
+
+
+    /**
+     * Gets the dcName value for this WSContext.
+     * 
+     * @return dcName
      */
     public String getDcName() {
         return dcName;
     }
 
-    /**
-     * 设置dcName属性的值。
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setDcName(String value) {
-        this.dcName = value;
-    }
 
     /**
-     * 获取password属性的值。
+     * Sets the dcName value for this WSContext.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @param dcName
+     */
+    public void setDcName(String dcName) {
+        this.dcName = dcName;
+    }
+
+
+    /**
+     * Gets the password value for this WSContext.
+     * 
+     * @return password
      */
     public String getPassword() {
         return password;
     }
 
-    /**
-     * 设置password属性的值。
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setPassword(String value) {
-        this.password = value;
-    }
 
     /**
-     * 获取sessionId属性的值。
+     * Sets the password value for this WSContext.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @param password
+     */
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
+    /**
+     * Gets the sessionId value for this WSContext.
+     * 
+     * @return sessionId
      */
     public String getSessionId() {
         return sessionId;
     }
 
-    /**
-     * 设置sessionId属性的值。
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSessionId(String value) {
-        this.sessionId = value;
-    }
 
     /**
-     * 获取slnName属性的值。
+     * Sets the sessionId value for this WSContext.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @param sessionId
+     */
+    public void setSessionId(String sessionId) {
+        this.sessionId = sessionId;
+    }
+
+
+    /**
+     * Gets the slnName value for this WSContext.
+     * 
+     * @return slnName
      */
     public String getSlnName() {
         return slnName;
     }
 
-    /**
-     * 设置slnName属性的值。
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setSlnName(String value) {
-        this.slnName = value;
-    }
 
     /**
-     * 获取userName属性的值。
+     * Sets the slnName value for this WSContext.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
+     * @param slnName
+     */
+    public void setSlnName(String slnName) {
+        this.slnName = slnName;
+    }
+
+
+    /**
+     * Gets the userName value for this WSContext.
+     * 
+     * @return userName
      */
     public String getUserName() {
         return userName;
     }
 
+
     /**
-     * 设置userName属性的值。
+     * Sets the userName value for this WSContext.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
+     * @param userName
      */
-    public void setUserName(String value) {
-        this.userName = value;
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    private Object __equalsCalc = null;
+    public synchronized boolean equals(Object obj) {
+        if (!(obj instanceof WSContext)) return false;
+        WSContext other = (WSContext) obj;
+        if (obj == null) return false;
+        if (this == obj) return true;
+        if (__equalsCalc != null) {
+            return (__equalsCalc == obj);
+        }
+        __equalsCalc = obj;
+        boolean _equals;
+        _equals = true && 
+            this.dbType == other.getDbType() &&
+            ((this.dcName==null && other.getDcName()==null) || 
+             (this.dcName!=null &&
+              this.dcName.equals(other.getDcName()))) &&
+            ((this.password==null && other.getPassword()==null) || 
+             (this.password!=null &&
+              this.password.equals(other.getPassword()))) &&
+            ((this.sessionId==null && other.getSessionId()==null) || 
+             (this.sessionId!=null &&
+              this.sessionId.equals(other.getSessionId()))) &&
+            ((this.slnName==null && other.getSlnName()==null) || 
+             (this.slnName!=null &&
+              this.slnName.equals(other.getSlnName()))) &&
+            ((this.userName==null && other.getUserName()==null) || 
+             (this.userName!=null &&
+              this.userName.equals(other.getUserName())));
+        __equalsCalc = null;
+        return _equals;
+    }
+
+    private boolean __hashCodeCalc = false;
+    public synchronized int hashCode() {
+        if (__hashCodeCalc) {
+            return 0;
+        }
+        __hashCodeCalc = true;
+        int _hashCode = 1;
+        _hashCode += getDbType();
+        if (getDcName() != null) {
+            _hashCode += getDcName().hashCode();
+        }
+        if (getPassword() != null) {
+            _hashCode += getPassword().hashCode();
+        }
+        if (getSessionId() != null) {
+            _hashCode += getSessionId().hashCode();
+        }
+        if (getSlnName() != null) {
+            _hashCode += getSlnName().hashCode();
+        }
+        if (getUserName() != null) {
+            _hashCode += getUserName().hashCode();
+        }
+        __hashCodeCalc = false;
+        return _hashCode;
+    }
+
+    // Type metadata
+    private static org.apache.axis.description.TypeDesc typeDesc =
+        new org.apache.axis.description.TypeDesc(WSContext.class, true);
+
+    static {
+        typeDesc.setXmlType(new javax.xml.namespace.QName("urn:client", "WSContext"));
+        org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("dbType");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "dbType"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "int"));
+        elemField.setNillable(false);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("dcName");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "dcName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("password");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "password"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("sessionId");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "sessionId"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("slnName");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "slnName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("userName");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "userName"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+    }
+
+    /**
+     * Return type metadata object
+     */
+    public static org.apache.axis.description.TypeDesc getTypeDesc() {
+        return typeDesc;
+    }
+
+    /**
+     * Get Custom Serializer
+     */
+    public static org.apache.axis.encoding.Serializer getSerializer(
+           String mechType,
+           Class _javaType,
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanSerializer(
+            _javaType, _xmlType, typeDesc);
+    }
+
+    /**
+     * Get Custom Deserializer
+     */
+    public static org.apache.axis.encoding.Deserializer getDeserializer(
+           String mechType,
+           Class _javaType,
+           javax.xml.namespace.QName _xmlType) {
+        return 
+          new  org.apache.axis.encoding.ser.BeanDeserializer(
+            _javaType, _xmlType, typeDesc);
     }
 
 }
