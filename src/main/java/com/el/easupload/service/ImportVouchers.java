@@ -8,9 +8,19 @@ import java.util.List;
 
 public class ImportVouchers {
 
-    public String[][] impVouchers(){
+    public void impVouchers(){
+        String[][] msg=null;
 
-        return null;
+        //定义一个标识存放元素个数
+        int count = 0;
+        //外循环遍历有多少个一维数组
+        for(int i = 0; i <msg.length;i++){
+            //内循环遍历每一个一维数组的元素
+            for(int j = 0; j <msg.length;j++){
+                count++;	//如果有元素，计数标识+1
+            }
+        }
+
     }
     public WSWSVoucher[] JDEConvBean(List<F550911z> f550911zs) {
         WSWSVoucher[] vouchers=new WSWSVoucher[f550911zs.size()];

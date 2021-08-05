@@ -21,6 +21,11 @@ class EasUploadApplicationTests {
         criteria.andGLUKIDEqualTo(new BigDecimal(3));
 
         List<F550911z> f550911z= f551513ZDao.selectByExample(f550911zExample);
+
+        F550911z f =new F550911z();
+        criteria.andGLICUEqualTo(new BigDecimal(3));
+        f.setGLABR1("a");
+        f551513ZDao.updateByExampleSelective(f,f550911zExample);
         System.out.println(f550911z.get(1).getGLDKJ());
     }
 
