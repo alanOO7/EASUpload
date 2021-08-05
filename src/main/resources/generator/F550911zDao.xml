@@ -1,0 +1,2291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.el.easupload.dao.F550911zDao">
+  <resultMap id="BaseResultMap" type="com.el.easupload.model.F550911z">
+    <result column="GLUKID" jdbcType="DECIMAL" property="GLUKID" />
+    <result column="GLKCO" jdbcType="VARCHAR" property="GLKCO" />
+    <result column="GLDCT" jdbcType="VARCHAR" property="GLDCT" />
+    <result column="GLDOC" jdbcType="DECIMAL" property="GLDOC" />
+    <result column="GLDGJ" jdbcType="DECIMAL" property="GLDGJ" />
+    <result column="GLJELN" jdbcType="DECIMAL" property="GLJELN" />
+    <result column="GLEXTL" jdbcType="VARCHAR" property="GLEXTL" />
+    <result column="GLPOST" jdbcType="VARCHAR" property="GLPOST" />
+    <result column="GLICU" jdbcType="DECIMAL" property="GLICU" />
+    <result column="GLICUT" jdbcType="VARCHAR" property="GLICUT" />
+    <result column="GLDICJ" jdbcType="DECIMAL" property="GLDICJ" />
+    <result column="GLDSYJ" jdbcType="DECIMAL" property="GLDSYJ" />
+    <result column="GLTICU" jdbcType="DECIMAL" property="GLTICU" />
+    <result column="GLCO" jdbcType="VARCHAR" property="GLCO" />
+    <result column="GLANI" jdbcType="VARCHAR" property="GLANI" />
+    <result column="GLAM" jdbcType="VARCHAR" property="GLAM" />
+    <result column="GLAID" jdbcType="VARCHAR" property="GLAID" />
+    <result column="GLMCU" jdbcType="VARCHAR" property="GLMCU" />
+    <result column="GLOBJ" jdbcType="VARCHAR" property="GLOBJ" />
+    <result column="GLSUB" jdbcType="VARCHAR" property="GLSUB" />
+    <result column="GLSBL" jdbcType="VARCHAR" property="GLSBL" />
+    <result column="GLSBLT" jdbcType="VARCHAR" property="GLSBLT" />
+    <result column="GLLT" jdbcType="VARCHAR" property="GLLT" />
+    <result column="GLPN" jdbcType="DECIMAL" property="GLPN" />
+    <result column="GLCTRY" jdbcType="DECIMAL" property="GLCTRY" />
+    <result column="GLFY" jdbcType="DECIMAL" property="GLFY" />
+    <result column="GLFQ" jdbcType="VARCHAR" property="GLFQ" />
+    <result column="GLCRCD" jdbcType="VARCHAR" property="GLCRCD" />
+    <result column="GLCRR" jdbcType="DECIMAL" property="GLCRR" />
+    <result column="GLHCRR" jdbcType="DECIMAL" property="GLHCRR" />
+    <result column="GLHDGJ" jdbcType="DECIMAL" property="GLHDGJ" />
+    <result column="GLAA" jdbcType="DECIMAL" property="GLAA" />
+    <result column="GLU" jdbcType="DECIMAL" property="GLU" />
+    <result column="GLUM" jdbcType="VARCHAR" property="GLUM" />
+    <result column="GLGLC" jdbcType="VARCHAR" property="GLGLC" />
+    <result column="GLRE" jdbcType="VARCHAR" property="GLRE" />
+    <result column="GLEXA" jdbcType="VARCHAR" property="GLEXA" />
+    <result column="GLEXR" jdbcType="VARCHAR" property="GLEXR" />
+    <result column="GLR1" jdbcType="VARCHAR" property="GLR1" />
+    <result column="GLR2" jdbcType="VARCHAR" property="GLR2" />
+    <result column="GLR3" jdbcType="VARCHAR" property="GLR3" />
+    <result column="GLSFX" jdbcType="VARCHAR" property="GLSFX" />
+    <result column="GLODOC" jdbcType="DECIMAL" property="GLODOC" />
+    <result column="GLODCT" jdbcType="VARCHAR" property="GLODCT" />
+    <result column="GLOSFX" jdbcType="VARCHAR" property="GLOSFX" />
+    <result column="GLPKCO" jdbcType="VARCHAR" property="GLPKCO" />
+    <result column="GLOKCO" jdbcType="VARCHAR" property="GLOKCO" />
+    <result column="GLPDCT" jdbcType="VARCHAR" property="GLPDCT" />
+    <result column="GLAN8" jdbcType="DECIMAL" property="GLAN8" />
+    <result column="GLCN" jdbcType="VARCHAR" property="GLCN" />
+    <result column="GLDKJ" jdbcType="DECIMAL" property="GLDKJ" />
+    <result column="GLDKC" jdbcType="DECIMAL" property="GLDKC" />
+    <result column="GLASID" jdbcType="VARCHAR" property="GLASID" />
+    <result column="GLBRE" jdbcType="VARCHAR" property="GLBRE" />
+    <result column="GLRCND" jdbcType="VARCHAR" property="GLRCND" />
+    <result column="GLSUMM" jdbcType="VARCHAR" property="GLSUMM" />
+    <result column="GLPRGE" jdbcType="VARCHAR" property="GLPRGE" />
+    <result column="GLTNN" jdbcType="VARCHAR" property="GLTNN" />
+    <result column="GLALT1" jdbcType="VARCHAR" property="GLALT1" />
+    <result column="GLALT2" jdbcType="VARCHAR" property="GLALT2" />
+    <result column="GLALT3" jdbcType="VARCHAR" property="GLALT3" />
+    <result column="GLALT4" jdbcType="VARCHAR" property="GLALT4" />
+    <result column="GLALT5" jdbcType="VARCHAR" property="GLALT5" />
+    <result column="GLALT6" jdbcType="VARCHAR" property="GLALT6" />
+    <result column="GLALT7" jdbcType="VARCHAR" property="GLALT7" />
+    <result column="GLALT8" jdbcType="VARCHAR" property="GLALT8" />
+    <result column="GLALT9" jdbcType="VARCHAR" property="GLALT9" />
+    <result column="GLALT0" jdbcType="VARCHAR" property="GLALT0" />
+    <result column="GLALTT" jdbcType="VARCHAR" property="GLALTT" />
+    <result column="GLALTU" jdbcType="VARCHAR" property="GLALTU" />
+    <result column="GLALTV" jdbcType="VARCHAR" property="GLALTV" />
+    <result column="GLALTW" jdbcType="VARCHAR" property="GLALTW" />
+    <result column="GLALTX" jdbcType="VARCHAR" property="GLALTX" />
+    <result column="GLALTZ" jdbcType="VARCHAR" property="GLALTZ" />
+    <result column="GLDLNA" jdbcType="VARCHAR" property="GLDLNA" />
+    <result column="GLCFF1" jdbcType="VARCHAR" property="GLCFF1" />
+    <result column="GLCFF2" jdbcType="VARCHAR" property="GLCFF2" />
+    <result column="GLASM" jdbcType="VARCHAR" property="GLASM" />
+    <result column="GLBC" jdbcType="VARCHAR" property="GLBC" />
+    <result column="GLVINV" jdbcType="VARCHAR" property="GLVINV" />
+    <result column="GLIVD" jdbcType="DECIMAL" property="GLIVD" />
+    <result column="GLWR01" jdbcType="VARCHAR" property="GLWR01" />
+    <result column="GLPO" jdbcType="VARCHAR" property="GLPO" />
+    <result column="GLPSFX" jdbcType="VARCHAR" property="GLPSFX" />
+    <result column="GLDCTO" jdbcType="VARCHAR" property="GLDCTO" />
+    <result column="GLLNID" jdbcType="DECIMAL" property="GLLNID" />
+    <result column="GLWY" jdbcType="DECIMAL" property="GLWY" />
+    <result column="GLWN" jdbcType="DECIMAL" property="GLWN" />
+    <result column="GLFNLP" jdbcType="VARCHAR" property="GLFNLP" />
+    <result column="GLOPSQ" jdbcType="DECIMAL" property="GLOPSQ" />
+    <result column="GLJBCD" jdbcType="VARCHAR" property="GLJBCD" />
+    <result column="GLJBST" jdbcType="VARCHAR" property="GLJBST" />
+    <result column="GLHMCU" jdbcType="VARCHAR" property="GLHMCU" />
+    <result column="GLDOI" jdbcType="DECIMAL" property="GLDOI" />
+    <result column="GLALID" jdbcType="VARCHAR" property="GLALID" />
+    <result column="GLALTY" jdbcType="VARCHAR" property="GLALTY" />
+    <result column="GLDSVJ" jdbcType="DECIMAL" property="GLDSVJ" />
+    <result column="GLTORG" jdbcType="VARCHAR" property="GLTORG" />
+    <result column="GLREG#" jdbcType="DECIMAL" property="GLREG" />
+    <result column="GLPYID" jdbcType="DECIMAL" property="GLPYID" />
+    <result column="GLUSER" jdbcType="VARCHAR" property="GLUSER" />
+    <result column="GLPID" jdbcType="VARCHAR" property="GLPID" />
+    <result column="GLJOBN" jdbcType="VARCHAR" property="GLJOBN" />
+    <result column="GLUPMJ" jdbcType="DECIMAL" property="GLUPMJ" />
+    <result column="GLUPMT" jdbcType="DECIMAL" property="GLUPMT" />
+    <result column="GLABR1" jdbcType="VARCHAR" property="GLABR1" />
+    <result column="GLABR2" jdbcType="VARCHAR" property="GLABR2" />
+    <result column="GLABR3" jdbcType="VARCHAR" property="GLABR3" />
+    <result column="GLABR4" jdbcType="VARCHAR" property="GLABR4" />
+    <result column="GLABT1" jdbcType="VARCHAR" property="GLABT1" />
+    <result column="GLABT2" jdbcType="VARCHAR" property="GLABT2" />
+    <result column="GLABT3" jdbcType="VARCHAR" property="GLABT3" />
+    <result column="GLABT4" jdbcType="VARCHAR" property="GLABT4" />
+    <result column="GLITM" jdbcType="DECIMAL" property="GLITM" />
+    <result column="GLPM01" jdbcType="VARCHAR" property="GLPM01" />
+    <result column="GLPM02" jdbcType="VARCHAR" property="GLPM02" />
+    <result column="GLPM03" jdbcType="VARCHAR" property="GLPM03" />
+    <result column="GLPM04" jdbcType="VARCHAR" property="GLPM04" />
+    <result column="GLPM05" jdbcType="VARCHAR" property="GLPM05" />
+    <result column="GLPM06" jdbcType="VARCHAR" property="GLPM06" />
+    <result column="GLPM07" jdbcType="VARCHAR" property="GLPM07" />
+    <result column="GLPM08" jdbcType="VARCHAR" property="GLPM08" />
+    <result column="GLPM09" jdbcType="VARCHAR" property="GLPM09" />
+    <result column="GLPM10" jdbcType="VARCHAR" property="GLPM10" />
+    <result column="GLBCRC" jdbcType="VARCHAR" property="GLBCRC" />
+    <result column="GLCRRM" jdbcType="VARCHAR" property="GLCRRM" />
+    <result column="GLPRGF" jdbcType="VARCHAR" property="GLPRGF" />
+    <result column="GLTXA1" jdbcType="VARCHAR" property="GLTXA1" />
+    <result column="GLEXR1" jdbcType="VARCHAR" property="GLEXR1" />
+    <result column="GLTXITM" jdbcType="DECIMAL" property="GLTXITM" />
+    <result column="GLACTB" jdbcType="VARCHAR" property="GLACTB" />
+    <result column="GLGPF1" jdbcType="VARCHAR" property="GLGPF1" />
+    <result column="GLACR" jdbcType="DECIMAL" property="GLACR" />
+    <result column="GLDLNID" jdbcType="DECIMAL" property="GLDLNID" />
+    <result column="GLCKNU" jdbcType="VARCHAR" property="GLCKNU" />
+    <result column="GLBUPC" jdbcType="VARCHAR" property="GLBUPC" />
+    <result column="GLAHBU" jdbcType="VARCHAR" property="GLAHBU" />
+    <result column="GLEPGC" jdbcType="VARCHAR" property="GLEPGC" />
+    <result column="GLJPGC" jdbcType="VARCHAR" property="GLJPGC" />
+    <result column="GLRC5" jdbcType="DECIMAL" property="GLRC5" />
+    <result column="GLSFXE" jdbcType="DECIMAL" property="GLSFXE" />
+    <result column="GLOFM" jdbcType="VARCHAR" property="GLOFM" />
+    <result column="GLD200" jdbcType="VARCHAR" property="GLD200" />
+    <result column="GLAG" jdbcType="DECIMAL" property="GLAG" />
+    <result column="GLAAP" jdbcType="DECIMAL" property="GLAAP" />
+    <result column="GLEV01" jdbcType="VARCHAR" property="GLEV01" />
+    <result column="GLEV02" jdbcType="VARCHAR" property="GLEV02" />
+    <result column="GLEV03" jdbcType="VARCHAR" property="GLEV03" />
+    <result column="GLEV04" jdbcType="VARCHAR" property="GLEV04" />
+    <result column="GLEV05" jdbcType="VARCHAR" property="GLEV05" />
+    <result column="GLD1" jdbcType="DECIMAL" property="GLD1" />
+    <result column="GLD2" jdbcType="DECIMAL" property="GLD2" />
+    <result column="GLD3" jdbcType="DECIMAL" property="GLD3" />
+    <result column="GLD4" jdbcType="DECIMAL" property="GLD4" />
+    <result column="GLD5" jdbcType="DECIMAL" property="GLD5" />
+    <result column="GLSRP1" jdbcType="VARCHAR" property="GLSRP1" />
+    <result column="GLSRP2" jdbcType="VARCHAR" property="GLSRP2" />
+    <result column="GLSRP3" jdbcType="VARCHAR" property="GLSRP3" />
+    <result column="GLSRP4" jdbcType="VARCHAR" property="GLSRP4" />
+    <result column="GLSRP5" jdbcType="VARCHAR" property="GLSRP5" />
+    <result column="GLDL01" jdbcType="VARCHAR" property="GLDL01" />
+    <result column="GLDL02" jdbcType="VARCHAR" property="GLDL02" />
+    <result column="GLDL03" jdbcType="VARCHAR" property="GLDL03" />
+    <result column="GLDL04" jdbcType="VARCHAR" property="GLDL04" />
+    <result column="GLDL05" jdbcType="VARCHAR" property="GLDL05" />
+    <result column="GLDL06" jdbcType="VARCHAR" property="GLDL06" />
+    <result column="GLDL07" jdbcType="VARCHAR" property="GLDL07" />
+    <result column="GLDL08" jdbcType="VARCHAR" property="GLDL08" />
+    <result column="GLDL09" jdbcType="VARCHAR" property="GLDL09" />
+    <result column="GLDL10" jdbcType="VARCHAR" property="GLDL10" />
+    <result column="GLDL11" jdbcType="VARCHAR" property="GLDL11" />
+    <result column="GLDL12" jdbcType="VARCHAR" property="GLDL12" />
+    <result column="GLDL13" jdbcType="VARCHAR" property="GLDL13" />
+    <result column="GLDL14" jdbcType="VARCHAR" property="GLDL14" />
+    <result column="GLDL15" jdbcType="VARCHAR" property="GLDL15" />
+    <result column="GLAN11" jdbcType="DECIMAL" property="GLAN11" />
+    <result column="GLAN12" jdbcType="DECIMAL" property="GLAN12" />
+    <result column="GLAN13" jdbcType="DECIMAL" property="GLAN13" />
+    <result column="GLAN14" jdbcType="DECIMAL" property="GLAN14" />
+    <result column="GLAN15" jdbcType="DECIMAL" property="GLAN15" />
+    <result column="GLDS01" jdbcType="VARCHAR" property="GLDS01" />
+    <result column="GLDS02" jdbcType="VARCHAR" property="GLDS02" />
+    <result column="GLDS03" jdbcType="VARCHAR" property="GLDS03" />
+    <result column="GLDS04" jdbcType="VARCHAR" property="GLDS04" />
+    <result column="GLDS05" jdbcType="VARCHAR" property="GLDS05" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    GLUKID, GLKCO, GLDCT, GLDOC, GLDGJ, GLJELN, GLEXTL, GLPOST, GLICU, GLICUT, GLDICJ, 
+    GLDSYJ, GLTICU, GLCO, GLANI, GLAM, GLAID, GLMCU, GLOBJ, GLSUB, GLSBL, GLSBLT, GLLT, 
+    GLPN, GLCTRY, GLFY, GLFQ, GLCRCD, GLCRR, GLHCRR, GLHDGJ, GLAA, GLU, GLUM, GLGLC, 
+    GLRE, GLEXA, GLEXR, GLR1, GLR2, GLR3, GLSFX, GLODOC, GLODCT, GLOSFX, GLPKCO, GLOKCO, 
+    GLPDCT, GLAN8, GLCN, DECODE(GLDKJ,0,'0',TO_CHAR(TO_DATE( GLDKJ-100000,'YYDDD') ,'yyyy-MM-dd') ) GLDKJ, GLDKC, GLASID, GLBRE, GLRCND, GLSUMM, GLPRGE, GLTNN,
+    GLALT1, GLALT2, GLALT3, GLALT4, GLALT5, GLALT6, GLALT7, GLALT8, GLALT9, GLALT0, GLALTT, 
+    GLALTU, GLALTV, GLALTW, GLALTX, GLALTZ, GLDLNA, GLCFF1, GLCFF2, GLASM, GLBC, GLVINV, 
+    GLIVD, GLWR01, GLPO, GLPSFX, GLDCTO, GLLNID, GLWY, GLWN, GLFNLP, GLOPSQ, GLJBCD, 
+    GLJBST, GLHMCU, GLDOI, GLALID, GLALTY, GLDSVJ, GLTORG, GLREG#, GLPYID, GLUSER, GLPID, 
+    GLJOBN, GLUPMJ, GLUPMT, GLABR1, GLABR2, GLABR3, GLABR4, GLABT1, GLABT2, GLABT3, GLABT4, 
+    GLITM, GLPM01, GLPM02, GLPM03, GLPM04, GLPM05, GLPM06, GLPM07, GLPM08, GLPM09, GLPM10, 
+    GLBCRC, GLCRRM, GLPRGF, GLTXA1, GLEXR1, GLTXITM, GLACTB, GLGPF1, GLACR, GLDLNID, 
+    GLCKNU, GLBUPC, GLAHBU, GLEPGC, GLJPGC, GLRC5, GLSFXE, GLOFM, GLD200, GLAG, GLAAP, 
+    GLEV01, GLEV02, GLEV03, GLEV04, GLEV05, GLD1, GLD2, GLD3, GLD4, GLD5, GLSRP1, GLSRP2, 
+    GLSRP3, GLSRP4, GLSRP5, GLDL01, GLDL02, GLDL03, GLDL04, GLDL05, GLDL06, GLDL07, GLDL08, 
+    GLDL09, GLDL10, GLDL11, GLDL12, GLDL13, GLDL14, GLDL15, GLAN11, GLAN12, GLAN13, GLAN14, 
+    GLAN15, GLDS01, GLDS02, GLDS03, GLDS04, GLDS05
+  </sql>
+  <select id="selectByExample" parameterType="com.el.easupload.model.F550911zExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from F550911Z
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <delete id="deleteByExample" parameterType="com.el.easupload.model.F550911zExample">
+    delete from F550911Z
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.el.easupload.model.F550911z">
+    insert into F550911Z (GLUKID, GLKCO, GLDCT, 
+      GLDOC, GLDGJ, GLJELN, 
+      GLEXTL, GLPOST, GLICU, 
+      GLICUT, GLDICJ, GLDSYJ, 
+      GLTICU, GLCO, GLANI, 
+      GLAM, GLAID, GLMCU, 
+      GLOBJ, GLSUB, GLSBL, 
+      GLSBLT, GLLT, GLPN, 
+      GLCTRY, GLFY, GLFQ, 
+      GLCRCD, GLCRR, GLHCRR, 
+      GLHDGJ, GLAA, GLU, 
+      GLUM, GLGLC, GLRE, 
+      GLEXA, GLEXR, GLR1, 
+      GLR2, GLR3, GLSFX, 
+      GLODOC, GLODCT, GLOSFX, 
+      GLPKCO, GLOKCO, GLPDCT, 
+      GLAN8, GLCN, GLDKJ, 
+      GLDKC, GLASID, GLBRE, 
+      GLRCND, GLSUMM, GLPRGE, 
+      GLTNN, GLALT1, GLALT2, 
+      GLALT3, GLALT4, GLALT5, 
+      GLALT6, GLALT7, GLALT8, 
+      GLALT9, GLALT0, GLALTT, 
+      GLALTU, GLALTV, GLALTW, 
+      GLALTX, GLALTZ, GLDLNA, 
+      GLCFF1, GLCFF2, GLASM, 
+      GLBC, GLVINV, GLIVD, 
+      GLWR01, GLPO, GLPSFX, 
+      GLDCTO, GLLNID, GLWY, 
+      GLWN, GLFNLP, GLOPSQ, 
+      GLJBCD, GLJBST, GLHMCU, 
+      GLDOI, GLALID, GLALTY, 
+      GLDSVJ, GLTORG, GLREG#, 
+      GLPYID, GLUSER, GLPID, 
+      GLJOBN, GLUPMJ, GLUPMT, 
+      GLABR1, GLABR2, GLABR3, 
+      GLABR4, GLABT1, GLABT2, 
+      GLABT3, GLABT4, GLITM, 
+      GLPM01, GLPM02, GLPM03, 
+      GLPM04, GLPM05, GLPM06, 
+      GLPM07, GLPM08, GLPM09, 
+      GLPM10, GLBCRC, GLCRRM, 
+      GLPRGF, GLTXA1, GLEXR1, 
+      GLTXITM, GLACTB, GLGPF1, 
+      GLACR, GLDLNID, GLCKNU, 
+      GLBUPC, GLAHBU, GLEPGC, 
+      GLJPGC, GLRC5, GLSFXE, 
+      GLOFM, GLD200, GLAG, 
+      GLAAP, GLEV01, GLEV02, 
+      GLEV03, GLEV04, GLEV05, 
+      GLD1, GLD2, GLD3, GLD4, 
+      GLD5, GLSRP1, GLSRP2, 
+      GLSRP3, GLSRP4, GLSRP5, 
+      GLDL01, GLDL02, GLDL03, 
+      GLDL04, GLDL05, GLDL06, 
+      GLDL07, GLDL08, GLDL09, 
+      GLDL10, GLDL11, GLDL12, 
+      GLDL13, GLDL14, GLDL15, 
+      GLAN11, GLAN12, GLAN13, 
+      GLAN14, GLAN15, GLDS01, 
+      GLDS02, GLDS03, GLDS04, 
+      GLDS05)
+    values (#{GLUKID,jdbcType=DECIMAL}, #{GLKCO,jdbcType=VARCHAR}, #{GLDCT,jdbcType=VARCHAR}, 
+      #{GLDOC,jdbcType=DECIMAL}, #{GLDGJ,jdbcType=DECIMAL}, #{GLJELN,jdbcType=DECIMAL}, 
+      #{GLEXTL,jdbcType=VARCHAR}, #{GLPOST,jdbcType=VARCHAR}, #{GLICU,jdbcType=DECIMAL}, 
+      #{GLICUT,jdbcType=VARCHAR}, #{GLDICJ,jdbcType=DECIMAL}, #{GLDSYJ,jdbcType=DECIMAL}, 
+      #{GLTICU,jdbcType=DECIMAL}, #{GLCO,jdbcType=VARCHAR}, #{GLANI,jdbcType=VARCHAR}, 
+      #{GLAM,jdbcType=VARCHAR}, #{GLAID,jdbcType=VARCHAR}, #{GLMCU,jdbcType=VARCHAR}, 
+      #{GLOBJ,jdbcType=VARCHAR}, #{GLSUB,jdbcType=VARCHAR}, #{GLSBL,jdbcType=VARCHAR}, 
+      #{GLSBLT,jdbcType=VARCHAR}, #{GLLT,jdbcType=VARCHAR}, #{GLPN,jdbcType=DECIMAL}, 
+      #{GLCTRY,jdbcType=DECIMAL}, #{GLFY,jdbcType=DECIMAL}, #{GLFQ,jdbcType=VARCHAR}, 
+      #{GLCRCD,jdbcType=VARCHAR}, #{GLCRR,jdbcType=DECIMAL}, #{GLHCRR,jdbcType=DECIMAL}, 
+      #{GLHDGJ,jdbcType=DECIMAL}, #{GLAA,jdbcType=DECIMAL}, #{GLU,jdbcType=DECIMAL}, 
+      #{GLUM,jdbcType=VARCHAR}, #{GLGLC,jdbcType=VARCHAR}, #{GLRE,jdbcType=VARCHAR}, 
+      #{GLEXA,jdbcType=VARCHAR}, #{GLEXR,jdbcType=VARCHAR}, #{GLR1,jdbcType=VARCHAR}, 
+      #{GLR2,jdbcType=VARCHAR}, #{GLR3,jdbcType=VARCHAR}, #{GLSFX,jdbcType=VARCHAR}, 
+      #{GLODOC,jdbcType=DECIMAL}, #{GLODCT,jdbcType=VARCHAR}, #{GLOSFX,jdbcType=VARCHAR}, 
+      #{GLPKCO,jdbcType=VARCHAR}, #{GLOKCO,jdbcType=VARCHAR}, #{GLPDCT,jdbcType=VARCHAR}, 
+      #{GLAN8,jdbcType=DECIMAL}, #{GLCN,jdbcType=VARCHAR}, #{GLDKJ,jdbcType=DECIMAL}, 
+      #{GLDKC,jdbcType=DECIMAL}, #{GLASID,jdbcType=VARCHAR}, #{GLBRE,jdbcType=VARCHAR}, 
+      #{GLRCND,jdbcType=VARCHAR}, #{GLSUMM,jdbcType=VARCHAR}, #{GLPRGE,jdbcType=VARCHAR}, 
+      #{GLTNN,jdbcType=VARCHAR}, #{GLALT1,jdbcType=VARCHAR}, #{GLALT2,jdbcType=VARCHAR}, 
+      #{GLALT3,jdbcType=VARCHAR}, #{GLALT4,jdbcType=VARCHAR}, #{GLALT5,jdbcType=VARCHAR}, 
+      #{GLALT6,jdbcType=VARCHAR}, #{GLALT7,jdbcType=VARCHAR}, #{GLALT8,jdbcType=VARCHAR}, 
+      #{GLALT9,jdbcType=VARCHAR}, #{GLALT0,jdbcType=VARCHAR}, #{GLALTT,jdbcType=VARCHAR}, 
+      #{GLALTU,jdbcType=VARCHAR}, #{GLALTV,jdbcType=VARCHAR}, #{GLALTW,jdbcType=VARCHAR}, 
+      #{GLALTX,jdbcType=VARCHAR}, #{GLALTZ,jdbcType=VARCHAR}, #{GLDLNA,jdbcType=VARCHAR}, 
+      #{GLCFF1,jdbcType=VARCHAR}, #{GLCFF2,jdbcType=VARCHAR}, #{GLASM,jdbcType=VARCHAR}, 
+      #{GLBC,jdbcType=VARCHAR}, #{GLVINV,jdbcType=VARCHAR}, #{GLIVD,jdbcType=DECIMAL}, 
+      #{GLWR01,jdbcType=VARCHAR}, #{GLPO,jdbcType=VARCHAR}, #{GLPSFX,jdbcType=VARCHAR}, 
+      #{GLDCTO,jdbcType=VARCHAR}, #{GLLNID,jdbcType=DECIMAL}, #{GLWY,jdbcType=DECIMAL}, 
+      #{GLWN,jdbcType=DECIMAL}, #{GLFNLP,jdbcType=VARCHAR}, #{GLOPSQ,jdbcType=DECIMAL}, 
+      #{GLJBCD,jdbcType=VARCHAR}, #{GLJBST,jdbcType=VARCHAR}, #{GLHMCU,jdbcType=VARCHAR}, 
+      #{GLDOI,jdbcType=DECIMAL}, #{GLALID,jdbcType=VARCHAR}, #{GLALTY,jdbcType=VARCHAR}, 
+      #{GLDSVJ,jdbcType=DECIMAL}, #{GLTORG,jdbcType=VARCHAR}, #{GLREG,jdbcType=DECIMAL},
+      #{GLPYID,jdbcType=DECIMAL}, #{GLUSER,jdbcType=VARCHAR}, #{GLPID,jdbcType=VARCHAR}, 
+      #{GLJOBN,jdbcType=VARCHAR}, #{GLUPMJ,jdbcType=DECIMAL}, #{GLUPMT,jdbcType=DECIMAL}, 
+      #{GLABR1,jdbcType=VARCHAR}, #{GLABR2,jdbcType=VARCHAR}, #{GLABR3,jdbcType=VARCHAR}, 
+      #{GLABR4,jdbcType=VARCHAR}, #{GLABT1,jdbcType=VARCHAR}, #{GLABT2,jdbcType=VARCHAR}, 
+      #{GLABT3,jdbcType=VARCHAR}, #{GLABT4,jdbcType=VARCHAR}, #{GLITM,jdbcType=DECIMAL}, 
+      #{GLPM01,jdbcType=VARCHAR}, #{GLPM02,jdbcType=VARCHAR}, #{GLPM03,jdbcType=VARCHAR}, 
+      #{GLPM04,jdbcType=VARCHAR}, #{GLPM05,jdbcType=VARCHAR}, #{GLPM06,jdbcType=VARCHAR}, 
+      #{GLPM07,jdbcType=VARCHAR}, #{GLPM08,jdbcType=VARCHAR}, #{GLPM09,jdbcType=VARCHAR}, 
+      #{GLPM10,jdbcType=VARCHAR}, #{GLBCRC,jdbcType=VARCHAR}, #{GLCRRM,jdbcType=VARCHAR}, 
+      #{GLPRGF,jdbcType=VARCHAR}, #{GLTXA1,jdbcType=VARCHAR}, #{GLEXR1,jdbcType=VARCHAR}, 
+      #{GLTXITM,jdbcType=DECIMAL}, #{GLACTB,jdbcType=VARCHAR}, #{GLGPF1,jdbcType=VARCHAR}, 
+      #{GLACR,jdbcType=DECIMAL}, #{GLDLNID,jdbcType=DECIMAL}, #{GLCKNU,jdbcType=VARCHAR}, 
+      #{GLBUPC,jdbcType=VARCHAR}, #{GLAHBU,jdbcType=VARCHAR}, #{GLEPGC,jdbcType=VARCHAR}, 
+      #{GLJPGC,jdbcType=VARCHAR}, #{GLRC5,jdbcType=DECIMAL}, #{GLSFXE,jdbcType=DECIMAL}, 
+      #{GLOFM,jdbcType=VARCHAR}, #{GLD200,jdbcType=VARCHAR}, #{GLAG,jdbcType=DECIMAL}, 
+      #{GLAAP,jdbcType=DECIMAL}, #{GLEV01,jdbcType=VARCHAR}, #{GLEV02,jdbcType=VARCHAR}, 
+      #{GLEV03,jdbcType=VARCHAR}, #{GLEV04,jdbcType=VARCHAR}, #{GLEV05,jdbcType=VARCHAR}, 
+      #{GLD1,jdbcType=DECIMAL}, #{GLD2,jdbcType=DECIMAL}, #{GLD3,jdbcType=DECIMAL}, #{GLD4,jdbcType=DECIMAL}, 
+      #{GLD5,jdbcType=DECIMAL}, #{GLSRP1,jdbcType=VARCHAR}, #{GLSRP2,jdbcType=VARCHAR}, 
+      #{GLSRP3,jdbcType=VARCHAR}, #{GLSRP4,jdbcType=VARCHAR}, #{GLSRP5,jdbcType=VARCHAR}, 
+      #{GLDL01,jdbcType=VARCHAR}, #{GLDL02,jdbcType=VARCHAR}, #{GLDL03,jdbcType=VARCHAR}, 
+      #{GLDL04,jdbcType=VARCHAR}, #{GLDL05,jdbcType=VARCHAR}, #{GLDL06,jdbcType=VARCHAR}, 
+      #{GLDL07,jdbcType=VARCHAR}, #{GLDL08,jdbcType=VARCHAR}, #{GLDL09,jdbcType=VARCHAR}, 
+      #{GLDL10,jdbcType=VARCHAR}, #{GLDL11,jdbcType=VARCHAR}, #{GLDL12,jdbcType=VARCHAR}, 
+      #{GLDL13,jdbcType=VARCHAR}, #{GLDL14,jdbcType=VARCHAR}, #{GLDL15,jdbcType=VARCHAR}, 
+      #{GLAN11,jdbcType=DECIMAL}, #{GLAN12,jdbcType=DECIMAL}, #{GLAN13,jdbcType=DECIMAL}, 
+      #{GLAN14,jdbcType=DECIMAL}, #{GLAN15,jdbcType=DECIMAL}, #{GLDS01,jdbcType=VARCHAR}, 
+      #{GLDS02,jdbcType=VARCHAR}, #{GLDS03,jdbcType=VARCHAR}, #{GLDS04,jdbcType=VARCHAR}, 
+      #{GLDS05,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.el.easupload.model.F550911z">
+    insert into F550911Z
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="GLUKID != null">
+        GLUKID,
+      </if>
+      <if test="GLKCO != null">
+        GLKCO,
+      </if>
+      <if test="GLDCT != null">
+        GLDCT,
+      </if>
+      <if test="GLDOC != null">
+        GLDOC,
+      </if>
+      <if test="GLDGJ != null">
+        GLDGJ,
+      </if>
+      <if test="GLJELN != null">
+        GLJELN,
+      </if>
+      <if test="GLEXTL != null">
+        GLEXTL,
+      </if>
+      <if test="GLPOST != null">
+        GLPOST,
+      </if>
+      <if test="GLICU != null">
+        GLICU,
+      </if>
+      <if test="GLICUT != null">
+        GLICUT,
+      </if>
+      <if test="GLDICJ != null">
+        GLDICJ,
+      </if>
+      <if test="GLDSYJ != null">
+        GLDSYJ,
+      </if>
+      <if test="GLTICU != null">
+        GLTICU,
+      </if>
+      <if test="GLCO != null">
+        GLCO,
+      </if>
+      <if test="GLANI != null">
+        GLANI,
+      </if>
+      <if test="GLAM != null">
+        GLAM,
+      </if>
+      <if test="GLAID != null">
+        GLAID,
+      </if>
+      <if test="GLMCU != null">
+        GLMCU,
+      </if>
+      <if test="GLOBJ != null">
+        GLOBJ,
+      </if>
+      <if test="GLSUB != null">
+        GLSUB,
+      </if>
+      <if test="GLSBL != null">
+        GLSBL,
+      </if>
+      <if test="GLSBLT != null">
+        GLSBLT,
+      </if>
+      <if test="GLLT != null">
+        GLLT,
+      </if>
+      <if test="GLPN != null">
+        GLPN,
+      </if>
+      <if test="GLCTRY != null">
+        GLCTRY,
+      </if>
+      <if test="GLFY != null">
+        GLFY,
+      </if>
+      <if test="GLFQ != null">
+        GLFQ,
+      </if>
+      <if test="GLCRCD != null">
+        GLCRCD,
+      </if>
+      <if test="GLCRR != null">
+        GLCRR,
+      </if>
+      <if test="GLHCRR != null">
+        GLHCRR,
+      </if>
+      <if test="GLHDGJ != null">
+        GLHDGJ,
+      </if>
+      <if test="GLAA != null">
+        GLAA,
+      </if>
+      <if test="GLU != null">
+        GLU,
+      </if>
+      <if test="GLUM != null">
+        GLUM,
+      </if>
+      <if test="GLGLC != null">
+        GLGLC,
+      </if>
+      <if test="GLRE != null">
+        GLRE,
+      </if>
+      <if test="GLEXA != null">
+        GLEXA,
+      </if>
+      <if test="GLEXR != null">
+        GLEXR,
+      </if>
+      <if test="GLR1 != null">
+        GLR1,
+      </if>
+      <if test="GLR2 != null">
+        GLR2,
+      </if>
+      <if test="GLR3 != null">
+        GLR3,
+      </if>
+      <if test="GLSFX != null">
+        GLSFX,
+      </if>
+      <if test="GLODOC != null">
+        GLODOC,
+      </if>
+      <if test="GLODCT != null">
+        GLODCT,
+      </if>
+      <if test="GLOSFX != null">
+        GLOSFX,
+      </if>
+      <if test="GLPKCO != null">
+        GLPKCO,
+      </if>
+      <if test="GLOKCO != null">
+        GLOKCO,
+      </if>
+      <if test="GLPDCT != null">
+        GLPDCT,
+      </if>
+      <if test="GLAN8 != null">
+        GLAN8,
+      </if>
+      <if test="GLCN != null">
+        GLCN,
+      </if>
+      <if test="GLDKJ != null">
+        GLDKJ,
+      </if>
+      <if test="GLDKC != null">
+        GLDKC,
+      </if>
+      <if test="GLASID != null">
+        GLASID,
+      </if>
+      <if test="GLBRE != null">
+        GLBRE,
+      </if>
+      <if test="GLRCND != null">
+        GLRCND,
+      </if>
+      <if test="GLSUMM != null">
+        GLSUMM,
+      </if>
+      <if test="GLPRGE != null">
+        GLPRGE,
+      </if>
+      <if test="GLTNN != null">
+        GLTNN,
+      </if>
+      <if test="GLALT1 != null">
+        GLALT1,
+      </if>
+      <if test="GLALT2 != null">
+        GLALT2,
+      </if>
+      <if test="GLALT3 != null">
+        GLALT3,
+      </if>
+      <if test="GLALT4 != null">
+        GLALT4,
+      </if>
+      <if test="GLALT5 != null">
+        GLALT5,
+      </if>
+      <if test="GLALT6 != null">
+        GLALT6,
+      </if>
+      <if test="GLALT7 != null">
+        GLALT7,
+      </if>
+      <if test="GLALT8 != null">
+        GLALT8,
+      </if>
+      <if test="GLALT9 != null">
+        GLALT9,
+      </if>
+      <if test="GLALT0 != null">
+        GLALT0,
+      </if>
+      <if test="GLALTT != null">
+        GLALTT,
+      </if>
+      <if test="GLALTU != null">
+        GLALTU,
+      </if>
+      <if test="GLALTV != null">
+        GLALTV,
+      </if>
+      <if test="GLALTW != null">
+        GLALTW,
+      </if>
+      <if test="GLALTX != null">
+        GLALTX,
+      </if>
+      <if test="GLALTZ != null">
+        GLALTZ,
+      </if>
+      <if test="GLDLNA != null">
+        GLDLNA,
+      </if>
+      <if test="GLCFF1 != null">
+        GLCFF1,
+      </if>
+      <if test="GLCFF2 != null">
+        GLCFF2,
+      </if>
+      <if test="GLASM != null">
+        GLASM,
+      </if>
+      <if test="GLBC != null">
+        GLBC,
+      </if>
+      <if test="GLVINV != null">
+        GLVINV,
+      </if>
+      <if test="GLIVD != null">
+        GLIVD,
+      </if>
+      <if test="GLWR01 != null">
+        GLWR01,
+      </if>
+      <if test="GLPO != null">
+        GLPO,
+      </if>
+      <if test="GLPSFX != null">
+        GLPSFX,
+      </if>
+      <if test="GLDCTO != null">
+        GLDCTO,
+      </if>
+      <if test="GLLNID != null">
+        GLLNID,
+      </if>
+      <if test="GLWY != null">
+        GLWY,
+      </if>
+      <if test="GLWN != null">
+        GLWN,
+      </if>
+      <if test="GLFNLP != null">
+        GLFNLP,
+      </if>
+      <if test="GLOPSQ != null">
+        GLOPSQ,
+      </if>
+      <if test="GLJBCD != null">
+        GLJBCD,
+      </if>
+      <if test="GLJBST != null">
+        GLJBST,
+      </if>
+      <if test="GLHMCU != null">
+        GLHMCU,
+      </if>
+      <if test="GLDOI != null">
+        GLDOI,
+      </if>
+      <if test="GLALID != null">
+        GLALID,
+      </if>
+      <if test="GLALTY != null">
+        GLALTY,
+      </if>
+      <if test="GLDSVJ != null">
+        GLDSVJ,
+      </if>
+      <if test="GLTORG != null">
+        GLTORG,
+      </if>
+      <if test="GLREG != null">
+        GLREG#,
+      </if>
+      <if test="GLPYID != null">
+        GLPYID,
+      </if>
+      <if test="GLUSER != null">
+        GLUSER,
+      </if>
+      <if test="GLPID != null">
+        GLPID,
+      </if>
+      <if test="GLJOBN != null">
+        GLJOBN,
+      </if>
+      <if test="GLUPMJ != null">
+        GLUPMJ,
+      </if>
+      <if test="GLUPMT != null">
+        GLUPMT,
+      </if>
+      <if test="GLABR1 != null">
+        GLABR1,
+      </if>
+      <if test="GLABR2 != null">
+        GLABR2,
+      </if>
+      <if test="GLABR3 != null">
+        GLABR3,
+      </if>
+      <if test="GLABR4 != null">
+        GLABR4,
+      </if>
+      <if test="GLABT1 != null">
+        GLABT1,
+      </if>
+      <if test="GLABT2 != null">
+        GLABT2,
+      </if>
+      <if test="GLABT3 != null">
+        GLABT3,
+      </if>
+      <if test="GLABT4 != null">
+        GLABT4,
+      </if>
+      <if test="GLITM != null">
+        GLITM,
+      </if>
+      <if test="GLPM01 != null">
+        GLPM01,
+      </if>
+      <if test="GLPM02 != null">
+        GLPM02,
+      </if>
+      <if test="GLPM03 != null">
+        GLPM03,
+      </if>
+      <if test="GLPM04 != null">
+        GLPM04,
+      </if>
+      <if test="GLPM05 != null">
+        GLPM05,
+      </if>
+      <if test="GLPM06 != null">
+        GLPM06,
+      </if>
+      <if test="GLPM07 != null">
+        GLPM07,
+      </if>
+      <if test="GLPM08 != null">
+        GLPM08,
+      </if>
+      <if test="GLPM09 != null">
+        GLPM09,
+      </if>
+      <if test="GLPM10 != null">
+        GLPM10,
+      </if>
+      <if test="GLBCRC != null">
+        GLBCRC,
+      </if>
+      <if test="GLCRRM != null">
+        GLCRRM,
+      </if>
+      <if test="GLPRGF != null">
+        GLPRGF,
+      </if>
+      <if test="GLTXA1 != null">
+        GLTXA1,
+      </if>
+      <if test="GLEXR1 != null">
+        GLEXR1,
+      </if>
+      <if test="GLTXITM != null">
+        GLTXITM,
+      </if>
+      <if test="GLACTB != null">
+        GLACTB,
+      </if>
+      <if test="GLGPF1 != null">
+        GLGPF1,
+      </if>
+      <if test="GLACR != null">
+        GLACR,
+      </if>
+      <if test="GLDLNID != null">
+        GLDLNID,
+      </if>
+      <if test="GLCKNU != null">
+        GLCKNU,
+      </if>
+      <if test="GLBUPC != null">
+        GLBUPC,
+      </if>
+      <if test="GLAHBU != null">
+        GLAHBU,
+      </if>
+      <if test="GLEPGC != null">
+        GLEPGC,
+      </if>
+      <if test="GLJPGC != null">
+        GLJPGC,
+      </if>
+      <if test="GLRC5 != null">
+        GLRC5,
+      </if>
+      <if test="GLSFXE != null">
+        GLSFXE,
+      </if>
+      <if test="GLOFM != null">
+        GLOFM,
+      </if>
+      <if test="GLD200 != null">
+        GLD200,
+      </if>
+      <if test="GLAG != null">
+        GLAG,
+      </if>
+      <if test="GLAAP != null">
+        GLAAP,
+      </if>
+      <if test="GLEV01 != null">
+        GLEV01,
+      </if>
+      <if test="GLEV02 != null">
+        GLEV02,
+      </if>
+      <if test="GLEV03 != null">
+        GLEV03,
+      </if>
+      <if test="GLEV04 != null">
+        GLEV04,
+      </if>
+      <if test="GLEV05 != null">
+        GLEV05,
+      </if>
+      <if test="GLD1 != null">
+        GLD1,
+      </if>
+      <if test="GLD2 != null">
+        GLD2,
+      </if>
+      <if test="GLD3 != null">
+        GLD3,
+      </if>
+      <if test="GLD4 != null">
+        GLD4,
+      </if>
+      <if test="GLD5 != null">
+        GLD5,
+      </if>
+      <if test="GLSRP1 != null">
+        GLSRP1,
+      </if>
+      <if test="GLSRP2 != null">
+        GLSRP2,
+      </if>
+      <if test="GLSRP3 != null">
+        GLSRP3,
+      </if>
+      <if test="GLSRP4 != null">
+        GLSRP4,
+      </if>
+      <if test="GLSRP5 != null">
+        GLSRP5,
+      </if>
+      <if test="GLDL01 != null">
+        GLDL01,
+      </if>
+      <if test="GLDL02 != null">
+        GLDL02,
+      </if>
+      <if test="GLDL03 != null">
+        GLDL03,
+      </if>
+      <if test="GLDL04 != null">
+        GLDL04,
+      </if>
+      <if test="GLDL05 != null">
+        GLDL05,
+      </if>
+      <if test="GLDL06 != null">
+        GLDL06,
+      </if>
+      <if test="GLDL07 != null">
+        GLDL07,
+      </if>
+      <if test="GLDL08 != null">
+        GLDL08,
+      </if>
+      <if test="GLDL09 != null">
+        GLDL09,
+      </if>
+      <if test="GLDL10 != null">
+        GLDL10,
+      </if>
+      <if test="GLDL11 != null">
+        GLDL11,
+      </if>
+      <if test="GLDL12 != null">
+        GLDL12,
+      </if>
+      <if test="GLDL13 != null">
+        GLDL13,
+      </if>
+      <if test="GLDL14 != null">
+        GLDL14,
+      </if>
+      <if test="GLDL15 != null">
+        GLDL15,
+      </if>
+      <if test="GLAN11 != null">
+        GLAN11,
+      </if>
+      <if test="GLAN12 != null">
+        GLAN12,
+      </if>
+      <if test="GLAN13 != null">
+        GLAN13,
+      </if>
+      <if test="GLAN14 != null">
+        GLAN14,
+      </if>
+      <if test="GLAN15 != null">
+        GLAN15,
+      </if>
+      <if test="GLDS01 != null">
+        GLDS01,
+      </if>
+      <if test="GLDS02 != null">
+        GLDS02,
+      </if>
+      <if test="GLDS03 != null">
+        GLDS03,
+      </if>
+      <if test="GLDS04 != null">
+        GLDS04,
+      </if>
+      <if test="GLDS05 != null">
+        GLDS05,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="GLUKID != null">
+        #{GLUKID,jdbcType=DECIMAL},
+      </if>
+      <if test="GLKCO != null">
+        #{GLKCO,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDCT != null">
+        #{GLDCT,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDOC != null">
+        #{GLDOC,jdbcType=DECIMAL},
+      </if>
+      <if test="GLDGJ != null">
+        #{GLDGJ,jdbcType=DECIMAL},
+      </if>
+      <if test="GLJELN != null">
+        #{GLJELN,jdbcType=DECIMAL},
+      </if>
+      <if test="GLEXTL != null">
+        #{GLEXTL,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPOST != null">
+        #{GLPOST,jdbcType=VARCHAR},
+      </if>
+      <if test="GLICU != null">
+        #{GLICU,jdbcType=DECIMAL},
+      </if>
+      <if test="GLICUT != null">
+        #{GLICUT,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDICJ != null">
+        #{GLDICJ,jdbcType=DECIMAL},
+      </if>
+      <if test="GLDSYJ != null">
+        #{GLDSYJ,jdbcType=DECIMAL},
+      </if>
+      <if test="GLTICU != null">
+        #{GLTICU,jdbcType=DECIMAL},
+      </if>
+      <if test="GLCO != null">
+        #{GLCO,jdbcType=VARCHAR},
+      </if>
+      <if test="GLANI != null">
+        #{GLANI,jdbcType=VARCHAR},
+      </if>
+      <if test="GLAM != null">
+        #{GLAM,jdbcType=VARCHAR},
+      </if>
+      <if test="GLAID != null">
+        #{GLAID,jdbcType=VARCHAR},
+      </if>
+      <if test="GLMCU != null">
+        #{GLMCU,jdbcType=VARCHAR},
+      </if>
+      <if test="GLOBJ != null">
+        #{GLOBJ,jdbcType=VARCHAR},
+      </if>
+      <if test="GLSUB != null">
+        #{GLSUB,jdbcType=VARCHAR},
+      </if>
+      <if test="GLSBL != null">
+        #{GLSBL,jdbcType=VARCHAR},
+      </if>
+      <if test="GLSBLT != null">
+        #{GLSBLT,jdbcType=VARCHAR},
+      </if>
+      <if test="GLLT != null">
+        #{GLLT,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPN != null">
+        #{GLPN,jdbcType=DECIMAL},
+      </if>
+      <if test="GLCTRY != null">
+        #{GLCTRY,jdbcType=DECIMAL},
+      </if>
+      <if test="GLFY != null">
+        #{GLFY,jdbcType=DECIMAL},
+      </if>
+      <if test="GLFQ != null">
+        #{GLFQ,jdbcType=VARCHAR},
+      </if>
+      <if test="GLCRCD != null">
+        #{GLCRCD,jdbcType=VARCHAR},
+      </if>
+      <if test="GLCRR != null">
+        #{GLCRR,jdbcType=DECIMAL},
+      </if>
+      <if test="GLHCRR != null">
+        #{GLHCRR,jdbcType=DECIMAL},
+      </if>
+      <if test="GLHDGJ != null">
+        #{GLHDGJ,jdbcType=DECIMAL},
+      </if>
+      <if test="GLAA != null">
+        #{GLAA,jdbcType=DECIMAL},
+      </if>
+      <if test="GLU != null">
+        #{GLU,jdbcType=DECIMAL},
+      </if>
+      <if test="GLUM != null">
+        #{GLUM,jdbcType=VARCHAR},
+      </if>
+      <if test="GLGLC != null">
+        #{GLGLC,jdbcType=VARCHAR},
+      </if>
+      <if test="GLRE != null">
+        #{GLRE,jdbcType=VARCHAR},
+      </if>
+      <if test="GLEXA != null">
+        #{GLEXA,jdbcType=VARCHAR},
+      </if>
+      <if test="GLEXR != null">
+        #{GLEXR,jdbcType=VARCHAR},
+      </if>
+      <if test="GLR1 != null">
+        #{GLR1,jdbcType=VARCHAR},
+      </if>
+      <if test="GLR2 != null">
+        #{GLR2,jdbcType=VARCHAR},
+      </if>
+      <if test="GLR3 != null">
+        #{GLR3,jdbcType=VARCHAR},
+      </if>
+      <if test="GLSFX != null">
+        #{GLSFX,jdbcType=VARCHAR},
+      </if>
+      <if test="GLODOC != null">
+        #{GLODOC,jdbcType=DECIMAL},
+      </if>
+      <if test="GLODCT != null">
+        #{GLODCT,jdbcType=VARCHAR},
+      </if>
+      <if test="GLOSFX != null">
+        #{GLOSFX,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPKCO != null">
+        #{GLPKCO,jdbcType=VARCHAR},
+      </if>
+      <if test="GLOKCO != null">
+        #{GLOKCO,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPDCT != null">
+        #{GLPDCT,jdbcType=VARCHAR},
+      </if>
+      <if test="GLAN8 != null">
+        #{GLAN8,jdbcType=DECIMAL},
+      </if>
+      <if test="GLCN != null">
+        #{GLCN,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDKJ != null">
+        #{GLDKJ,jdbcType=DECIMAL},
+      </if>
+      <if test="GLDKC != null">
+        #{GLDKC,jdbcType=DECIMAL},
+      </if>
+      <if test="GLASID != null">
+        #{GLASID,jdbcType=VARCHAR},
+      </if>
+      <if test="GLBRE != null">
+        #{GLBRE,jdbcType=VARCHAR},
+      </if>
+      <if test="GLRCND != null">
+        #{GLRCND,jdbcType=VARCHAR},
+      </if>
+      <if test="GLSUMM != null">
+        #{GLSUMM,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPRGE != null">
+        #{GLPRGE,jdbcType=VARCHAR},
+      </if>
+      <if test="GLTNN != null">
+        #{GLTNN,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALT1 != null">
+        #{GLALT1,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALT2 != null">
+        #{GLALT2,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALT3 != null">
+        #{GLALT3,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALT4 != null">
+        #{GLALT4,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALT5 != null">
+        #{GLALT5,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALT6 != null">
+        #{GLALT6,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALT7 != null">
+        #{GLALT7,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALT8 != null">
+        #{GLALT8,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALT9 != null">
+        #{GLALT9,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALT0 != null">
+        #{GLALT0,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALTT != null">
+        #{GLALTT,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALTU != null">
+        #{GLALTU,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALTV != null">
+        #{GLALTV,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALTW != null">
+        #{GLALTW,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALTX != null">
+        #{GLALTX,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALTZ != null">
+        #{GLALTZ,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDLNA != null">
+        #{GLDLNA,jdbcType=VARCHAR},
+      </if>
+      <if test="GLCFF1 != null">
+        #{GLCFF1,jdbcType=VARCHAR},
+      </if>
+      <if test="GLCFF2 != null">
+        #{GLCFF2,jdbcType=VARCHAR},
+      </if>
+      <if test="GLASM != null">
+        #{GLASM,jdbcType=VARCHAR},
+      </if>
+      <if test="GLBC != null">
+        #{GLBC,jdbcType=VARCHAR},
+      </if>
+      <if test="GLVINV != null">
+        #{GLVINV,jdbcType=VARCHAR},
+      </if>
+      <if test="GLIVD != null">
+        #{GLIVD,jdbcType=DECIMAL},
+      </if>
+      <if test="GLWR01 != null">
+        #{GLWR01,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPO != null">
+        #{GLPO,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPSFX != null">
+        #{GLPSFX,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDCTO != null">
+        #{GLDCTO,jdbcType=VARCHAR},
+      </if>
+      <if test="GLLNID != null">
+        #{GLLNID,jdbcType=DECIMAL},
+      </if>
+      <if test="GLWY != null">
+        #{GLWY,jdbcType=DECIMAL},
+      </if>
+      <if test="GLWN != null">
+        #{GLWN,jdbcType=DECIMAL},
+      </if>
+      <if test="GLFNLP != null">
+        #{GLFNLP,jdbcType=VARCHAR},
+      </if>
+      <if test="GLOPSQ != null">
+        #{GLOPSQ,jdbcType=DECIMAL},
+      </if>
+      <if test="GLJBCD != null">
+        #{GLJBCD,jdbcType=VARCHAR},
+      </if>
+      <if test="GLJBST != null">
+        #{GLJBST,jdbcType=VARCHAR},
+      </if>
+      <if test="GLHMCU != null">
+        #{GLHMCU,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDOI != null">
+        #{GLDOI,jdbcType=DECIMAL},
+      </if>
+      <if test="GLALID != null">
+        #{GLALID,jdbcType=VARCHAR},
+      </if>
+      <if test="GLALTY != null">
+        #{GLALTY,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDSVJ != null">
+        #{GLDSVJ,jdbcType=DECIMAL},
+      </if>
+      <if test="GLTORG != null">
+        #{GLTORG,jdbcType=VARCHAR},
+      </if>
+      <if test="GLREG != null">
+        #{GLREG,jdbcType=DECIMAL},
+      </if>
+      <if test="GLPYID != null">
+        #{GLPYID,jdbcType=DECIMAL},
+      </if>
+      <if test="GLUSER != null">
+        #{GLUSER,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPID != null">
+        #{GLPID,jdbcType=VARCHAR},
+      </if>
+      <if test="GLJOBN != null">
+        #{GLJOBN,jdbcType=VARCHAR},
+      </if>
+      <if test="GLUPMJ != null">
+        #{GLUPMJ,jdbcType=DECIMAL},
+      </if>
+      <if test="GLUPMT != null">
+        #{GLUPMT,jdbcType=DECIMAL},
+      </if>
+      <if test="GLABR1 != null">
+        #{GLABR1,jdbcType=VARCHAR},
+      </if>
+      <if test="GLABR2 != null">
+        #{GLABR2,jdbcType=VARCHAR},
+      </if>
+      <if test="GLABR3 != null">
+        #{GLABR3,jdbcType=VARCHAR},
+      </if>
+      <if test="GLABR4 != null">
+        #{GLABR4,jdbcType=VARCHAR},
+      </if>
+      <if test="GLABT1 != null">
+        #{GLABT1,jdbcType=VARCHAR},
+      </if>
+      <if test="GLABT2 != null">
+        #{GLABT2,jdbcType=VARCHAR},
+      </if>
+      <if test="GLABT3 != null">
+        #{GLABT3,jdbcType=VARCHAR},
+      </if>
+      <if test="GLABT4 != null">
+        #{GLABT4,jdbcType=VARCHAR},
+      </if>
+      <if test="GLITM != null">
+        #{GLITM,jdbcType=DECIMAL},
+      </if>
+      <if test="GLPM01 != null">
+        #{GLPM01,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPM02 != null">
+        #{GLPM02,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPM03 != null">
+        #{GLPM03,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPM04 != null">
+        #{GLPM04,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPM05 != null">
+        #{GLPM05,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPM06 != null">
+        #{GLPM06,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPM07 != null">
+        #{GLPM07,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPM08 != null">
+        #{GLPM08,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPM09 != null">
+        #{GLPM09,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPM10 != null">
+        #{GLPM10,jdbcType=VARCHAR},
+      </if>
+      <if test="GLBCRC != null">
+        #{GLBCRC,jdbcType=VARCHAR},
+      </if>
+      <if test="GLCRRM != null">
+        #{GLCRRM,jdbcType=VARCHAR},
+      </if>
+      <if test="GLPRGF != null">
+        #{GLPRGF,jdbcType=VARCHAR},
+      </if>
+      <if test="GLTXA1 != null">
+        #{GLTXA1,jdbcType=VARCHAR},
+      </if>
+      <if test="GLEXR1 != null">
+        #{GLEXR1,jdbcType=VARCHAR},
+      </if>
+      <if test="GLTXITM != null">
+        #{GLTXITM,jdbcType=DECIMAL},
+      </if>
+      <if test="GLACTB != null">
+        #{GLACTB,jdbcType=VARCHAR},
+      </if>
+      <if test="GLGPF1 != null">
+        #{GLGPF1,jdbcType=VARCHAR},
+      </if>
+      <if test="GLACR != null">
+        #{GLACR,jdbcType=DECIMAL},
+      </if>
+      <if test="GLDLNID != null">
+        #{GLDLNID,jdbcType=DECIMAL},
+      </if>
+      <if test="GLCKNU != null">
+        #{GLCKNU,jdbcType=VARCHAR},
+      </if>
+      <if test="GLBUPC != null">
+        #{GLBUPC,jdbcType=VARCHAR},
+      </if>
+      <if test="GLAHBU != null">
+        #{GLAHBU,jdbcType=VARCHAR},
+      </if>
+      <if test="GLEPGC != null">
+        #{GLEPGC,jdbcType=VARCHAR},
+      </if>
+      <if test="GLJPGC != null">
+        #{GLJPGC,jdbcType=VARCHAR},
+      </if>
+      <if test="GLRC5 != null">
+        #{GLRC5,jdbcType=DECIMAL},
+      </if>
+      <if test="GLSFXE != null">
+        #{GLSFXE,jdbcType=DECIMAL},
+      </if>
+      <if test="GLOFM != null">
+        #{GLOFM,jdbcType=VARCHAR},
+      </if>
+      <if test="GLD200 != null">
+        #{GLD200,jdbcType=VARCHAR},
+      </if>
+      <if test="GLAG != null">
+        #{GLAG,jdbcType=DECIMAL},
+      </if>
+      <if test="GLAAP != null">
+        #{GLAAP,jdbcType=DECIMAL},
+      </if>
+      <if test="GLEV01 != null">
+        #{GLEV01,jdbcType=VARCHAR},
+      </if>
+      <if test="GLEV02 != null">
+        #{GLEV02,jdbcType=VARCHAR},
+      </if>
+      <if test="GLEV03 != null">
+        #{GLEV03,jdbcType=VARCHAR},
+      </if>
+      <if test="GLEV04 != null">
+        #{GLEV04,jdbcType=VARCHAR},
+      </if>
+      <if test="GLEV05 != null">
+        #{GLEV05,jdbcType=VARCHAR},
+      </if>
+      <if test="GLD1 != null">
+        #{GLD1,jdbcType=DECIMAL},
+      </if>
+      <if test="GLD2 != null">
+        #{GLD2,jdbcType=DECIMAL},
+      </if>
+      <if test="GLD3 != null">
+        #{GLD3,jdbcType=DECIMAL},
+      </if>
+      <if test="GLD4 != null">
+        #{GLD4,jdbcType=DECIMAL},
+      </if>
+      <if test="GLD5 != null">
+        #{GLD5,jdbcType=DECIMAL},
+      </if>
+      <if test="GLSRP1 != null">
+        #{GLSRP1,jdbcType=VARCHAR},
+      </if>
+      <if test="GLSRP2 != null">
+        #{GLSRP2,jdbcType=VARCHAR},
+      </if>
+      <if test="GLSRP3 != null">
+        #{GLSRP3,jdbcType=VARCHAR},
+      </if>
+      <if test="GLSRP4 != null">
+        #{GLSRP4,jdbcType=VARCHAR},
+      </if>
+      <if test="GLSRP5 != null">
+        #{GLSRP5,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL01 != null">
+        #{GLDL01,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL02 != null">
+        #{GLDL02,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL03 != null">
+        #{GLDL03,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL04 != null">
+        #{GLDL04,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL05 != null">
+        #{GLDL05,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL06 != null">
+        #{GLDL06,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL07 != null">
+        #{GLDL07,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL08 != null">
+        #{GLDL08,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL09 != null">
+        #{GLDL09,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL10 != null">
+        #{GLDL10,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL11 != null">
+        #{GLDL11,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL12 != null">
+        #{GLDL12,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL13 != null">
+        #{GLDL13,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL14 != null">
+        #{GLDL14,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDL15 != null">
+        #{GLDL15,jdbcType=VARCHAR},
+      </if>
+      <if test="GLAN11 != null">
+        #{GLAN11,jdbcType=DECIMAL},
+      </if>
+      <if test="GLAN12 != null">
+        #{GLAN12,jdbcType=DECIMAL},
+      </if>
+      <if test="GLAN13 != null">
+        #{GLAN13,jdbcType=DECIMAL},
+      </if>
+      <if test="GLAN14 != null">
+        #{GLAN14,jdbcType=DECIMAL},
+      </if>
+      <if test="GLAN15 != null">
+        #{GLAN15,jdbcType=DECIMAL},
+      </if>
+      <if test="GLDS01 != null">
+        #{GLDS01,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDS02 != null">
+        #{GLDS02,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDS03 != null">
+        #{GLDS03,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDS04 != null">
+        #{GLDS04,jdbcType=VARCHAR},
+      </if>
+      <if test="GLDS05 != null">
+        #{GLDS05,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.el.easupload.model.F550911zExample" resultType="java.lang.Long">
+    select count(*) from F550911Z
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update F550911Z
+    <set>
+      <if test="record.GLUKID != null">
+        GLUKID = #{record.GLUKID,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLKCO != null">
+        GLKCO = #{record.GLKCO,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDCT != null">
+        GLDCT = #{record.GLDCT,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDOC != null">
+        GLDOC = #{record.GLDOC,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLDGJ != null">
+        GLDGJ = #{record.GLDGJ,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLJELN != null">
+        GLJELN = #{record.GLJELN,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLEXTL != null">
+        GLEXTL = #{record.GLEXTL,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPOST != null">
+        GLPOST = #{record.GLPOST,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLICU != null">
+        GLICU = #{record.GLICU,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLICUT != null">
+        GLICUT = #{record.GLICUT,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDICJ != null">
+        GLDICJ = #{record.GLDICJ,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLDSYJ != null">
+        GLDSYJ = #{record.GLDSYJ,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLTICU != null">
+        GLTICU = #{record.GLTICU,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLCO != null">
+        GLCO = #{record.GLCO,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLANI != null">
+        GLANI = #{record.GLANI,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLAM != null">
+        GLAM = #{record.GLAM,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLAID != null">
+        GLAID = #{record.GLAID,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLMCU != null">
+        GLMCU = #{record.GLMCU,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLOBJ != null">
+        GLOBJ = #{record.GLOBJ,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLSUB != null">
+        GLSUB = #{record.GLSUB,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLSBL != null">
+        GLSBL = #{record.GLSBL,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLSBLT != null">
+        GLSBLT = #{record.GLSBLT,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLLT != null">
+        GLLT = #{record.GLLT,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPN != null">
+        GLPN = #{record.GLPN,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLCTRY != null">
+        GLCTRY = #{record.GLCTRY,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLFY != null">
+        GLFY = #{record.GLFY,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLFQ != null">
+        GLFQ = #{record.GLFQ,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLCRCD != null">
+        GLCRCD = #{record.GLCRCD,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLCRR != null">
+        GLCRR = #{record.GLCRR,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLHCRR != null">
+        GLHCRR = #{record.GLHCRR,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLHDGJ != null">
+        GLHDGJ = #{record.GLHDGJ,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLAA != null">
+        GLAA = #{record.GLAA,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLU != null">
+        GLU = #{record.GLU,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLUM != null">
+        GLUM = #{record.GLUM,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLGLC != null">
+        GLGLC = #{record.GLGLC,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLRE != null">
+        GLRE = #{record.GLRE,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLEXA != null">
+        GLEXA = #{record.GLEXA,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLEXR != null">
+        GLEXR = #{record.GLEXR,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLR1 != null">
+        GLR1 = #{record.GLR1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLR2 != null">
+        GLR2 = #{record.GLR2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLR3 != null">
+        GLR3 = #{record.GLR3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLSFX != null">
+        GLSFX = #{record.GLSFX,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLODOC != null">
+        GLODOC = #{record.GLODOC,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLODCT != null">
+        GLODCT = #{record.GLODCT,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLOSFX != null">
+        GLOSFX = #{record.GLOSFX,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPKCO != null">
+        GLPKCO = #{record.GLPKCO,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLOKCO != null">
+        GLOKCO = #{record.GLOKCO,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPDCT != null">
+        GLPDCT = #{record.GLPDCT,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLAN8 != null">
+        GLAN8 = #{record.GLAN8,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLCN != null">
+        GLCN = #{record.GLCN,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDKJ != null">
+        GLDKJ = #{record.GLDKJ,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLDKC != null">
+        GLDKC = #{record.GLDKC,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLASID != null">
+        GLASID = #{record.GLASID,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLBRE != null">
+        GLBRE = #{record.GLBRE,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLRCND != null">
+        GLRCND = #{record.GLRCND,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLSUMM != null">
+        GLSUMM = #{record.GLSUMM,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPRGE != null">
+        GLPRGE = #{record.GLPRGE,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLTNN != null">
+        GLTNN = #{record.GLTNN,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALT1 != null">
+        GLALT1 = #{record.GLALT1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALT2 != null">
+        GLALT2 = #{record.GLALT2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALT3 != null">
+        GLALT3 = #{record.GLALT3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALT4 != null">
+        GLALT4 = #{record.GLALT4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALT5 != null">
+        GLALT5 = #{record.GLALT5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALT6 != null">
+        GLALT6 = #{record.GLALT6,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALT7 != null">
+        GLALT7 = #{record.GLALT7,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALT8 != null">
+        GLALT8 = #{record.GLALT8,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALT9 != null">
+        GLALT9 = #{record.GLALT9,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALT0 != null">
+        GLALT0 = #{record.GLALT0,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALTT != null">
+        GLALTT = #{record.GLALTT,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALTU != null">
+        GLALTU = #{record.GLALTU,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALTV != null">
+        GLALTV = #{record.GLALTV,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALTW != null">
+        GLALTW = #{record.GLALTW,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALTX != null">
+        GLALTX = #{record.GLALTX,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALTZ != null">
+        GLALTZ = #{record.GLALTZ,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDLNA != null">
+        GLDLNA = #{record.GLDLNA,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLCFF1 != null">
+        GLCFF1 = #{record.GLCFF1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLCFF2 != null">
+        GLCFF2 = #{record.GLCFF2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLASM != null">
+        GLASM = #{record.GLASM,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLBC != null">
+        GLBC = #{record.GLBC,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLVINV != null">
+        GLVINV = #{record.GLVINV,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLIVD != null">
+        GLIVD = #{record.GLIVD,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLWR01 != null">
+        GLWR01 = #{record.GLWR01,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPO != null">
+        GLPO = #{record.GLPO,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPSFX != null">
+        GLPSFX = #{record.GLPSFX,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDCTO != null">
+        GLDCTO = #{record.GLDCTO,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLLNID != null">
+        GLLNID = #{record.GLLNID,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLWY != null">
+        GLWY = #{record.GLWY,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLWN != null">
+        GLWN = #{record.GLWN,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLFNLP != null">
+        GLFNLP = #{record.GLFNLP,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLOPSQ != null">
+        GLOPSQ = #{record.GLOPSQ,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLJBCD != null">
+        GLJBCD = #{record.GLJBCD,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLJBST != null">
+        GLJBST = #{record.GLJBST,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLHMCU != null">
+        GLHMCU = #{record.GLHMCU,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDOI != null">
+        GLDOI = #{record.GLDOI,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLALID != null">
+        GLALID = #{record.GLALID,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLALTY != null">
+        GLALTY = #{record.GLALTY,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDSVJ != null">
+        GLDSVJ = #{record.GLDSVJ,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLTORG != null">
+        GLTORG = #{record.GLTORG,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLREG != null">
+        GLREG# = #{record.GLREG,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLPYID != null">
+        GLPYID = #{record.GLPYID,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLUSER != null">
+        GLUSER = #{record.GLUSER,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPID != null">
+        GLPID = #{record.GLPID,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLJOBN != null">
+        GLJOBN = #{record.GLJOBN,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLUPMJ != null">
+        GLUPMJ = #{record.GLUPMJ,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLUPMT != null">
+        GLUPMT = #{record.GLUPMT,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLABR1 != null">
+        GLABR1 = #{record.GLABR1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLABR2 != null">
+        GLABR2 = #{record.GLABR2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLABR3 != null">
+        GLABR3 = #{record.GLABR3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLABR4 != null">
+        GLABR4 = #{record.GLABR4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLABT1 != null">
+        GLABT1 = #{record.GLABT1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLABT2 != null">
+        GLABT2 = #{record.GLABT2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLABT3 != null">
+        GLABT3 = #{record.GLABT3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLABT4 != null">
+        GLABT4 = #{record.GLABT4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLITM != null">
+        GLITM = #{record.GLITM,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLPM01 != null">
+        GLPM01 = #{record.GLPM01,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPM02 != null">
+        GLPM02 = #{record.GLPM02,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPM03 != null">
+        GLPM03 = #{record.GLPM03,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPM04 != null">
+        GLPM04 = #{record.GLPM04,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPM05 != null">
+        GLPM05 = #{record.GLPM05,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPM06 != null">
+        GLPM06 = #{record.GLPM06,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPM07 != null">
+        GLPM07 = #{record.GLPM07,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPM08 != null">
+        GLPM08 = #{record.GLPM08,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPM09 != null">
+        GLPM09 = #{record.GLPM09,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPM10 != null">
+        GLPM10 = #{record.GLPM10,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLBCRC != null">
+        GLBCRC = #{record.GLBCRC,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLCRRM != null">
+        GLCRRM = #{record.GLCRRM,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLPRGF != null">
+        GLPRGF = #{record.GLPRGF,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLTXA1 != null">
+        GLTXA1 = #{record.GLTXA1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLEXR1 != null">
+        GLEXR1 = #{record.GLEXR1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLTXITM != null">
+        GLTXITM = #{record.GLTXITM,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLACTB != null">
+        GLACTB = #{record.GLACTB,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLGPF1 != null">
+        GLGPF1 = #{record.GLGPF1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLACR != null">
+        GLACR = #{record.GLACR,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLDLNID != null">
+        GLDLNID = #{record.GLDLNID,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLCKNU != null">
+        GLCKNU = #{record.GLCKNU,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLBUPC != null">
+        GLBUPC = #{record.GLBUPC,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLAHBU != null">
+        GLAHBU = #{record.GLAHBU,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLEPGC != null">
+        GLEPGC = #{record.GLEPGC,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLJPGC != null">
+        GLJPGC = #{record.GLJPGC,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLRC5 != null">
+        GLRC5 = #{record.GLRC5,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLSFXE != null">
+        GLSFXE = #{record.GLSFXE,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLOFM != null">
+        GLOFM = #{record.GLOFM,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLD200 != null">
+        GLD200 = #{record.GLD200,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLAG != null">
+        GLAG = #{record.GLAG,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLAAP != null">
+        GLAAP = #{record.GLAAP,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLEV01 != null">
+        GLEV01 = #{record.GLEV01,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLEV02 != null">
+        GLEV02 = #{record.GLEV02,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLEV03 != null">
+        GLEV03 = #{record.GLEV03,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLEV04 != null">
+        GLEV04 = #{record.GLEV04,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLEV05 != null">
+        GLEV05 = #{record.GLEV05,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLD1 != null">
+        GLD1 = #{record.GLD1,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLD2 != null">
+        GLD2 = #{record.GLD2,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLD3 != null">
+        GLD3 = #{record.GLD3,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLD4 != null">
+        GLD4 = #{record.GLD4,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLD5 != null">
+        GLD5 = #{record.GLD5,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLSRP1 != null">
+        GLSRP1 = #{record.GLSRP1,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLSRP2 != null">
+        GLSRP2 = #{record.GLSRP2,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLSRP3 != null">
+        GLSRP3 = #{record.GLSRP3,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLSRP4 != null">
+        GLSRP4 = #{record.GLSRP4,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLSRP5 != null">
+        GLSRP5 = #{record.GLSRP5,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL01 != null">
+        GLDL01 = #{record.GLDL01,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL02 != null">
+        GLDL02 = #{record.GLDL02,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL03 != null">
+        GLDL03 = #{record.GLDL03,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL04 != null">
+        GLDL04 = #{record.GLDL04,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL05 != null">
+        GLDL05 = #{record.GLDL05,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL06 != null">
+        GLDL06 = #{record.GLDL06,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL07 != null">
+        GLDL07 = #{record.GLDL07,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL08 != null">
+        GLDL08 = #{record.GLDL08,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL09 != null">
+        GLDL09 = #{record.GLDL09,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL10 != null">
+        GLDL10 = #{record.GLDL10,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL11 != null">
+        GLDL11 = #{record.GLDL11,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL12 != null">
+        GLDL12 = #{record.GLDL12,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL13 != null">
+        GLDL13 = #{record.GLDL13,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL14 != null">
+        GLDL14 = #{record.GLDL14,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDL15 != null">
+        GLDL15 = #{record.GLDL15,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLAN11 != null">
+        GLAN11 = #{record.GLAN11,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLAN12 != null">
+        GLAN12 = #{record.GLAN12,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLAN13 != null">
+        GLAN13 = #{record.GLAN13,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLAN14 != null">
+        GLAN14 = #{record.GLAN14,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLAN15 != null">
+        GLAN15 = #{record.GLAN15,jdbcType=DECIMAL},
+      </if>
+      <if test="record.GLDS01 != null">
+        GLDS01 = #{record.GLDS01,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDS02 != null">
+        GLDS02 = #{record.GLDS02,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDS03 != null">
+        GLDS03 = #{record.GLDS03,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDS04 != null">
+        GLDS04 = #{record.GLDS04,jdbcType=VARCHAR},
+      </if>
+      <if test="record.GLDS05 != null">
+        GLDS05 = #{record.GLDS05,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update F550911Z
+    set GLUKID = #{record.GLUKID,jdbcType=DECIMAL},
+      GLKCO = #{record.GLKCO,jdbcType=VARCHAR},
+      GLDCT = #{record.GLDCT,jdbcType=VARCHAR},
+      GLDOC = #{record.GLDOC,jdbcType=DECIMAL},
+      GLDGJ = #{record.GLDGJ,jdbcType=DECIMAL},
+      GLJELN = #{record.GLJELN,jdbcType=DECIMAL},
+      GLEXTL = #{record.GLEXTL,jdbcType=VARCHAR},
+      GLPOST = #{record.GLPOST,jdbcType=VARCHAR},
+      GLICU = #{record.GLICU,jdbcType=DECIMAL},
+      GLICUT = #{record.GLICUT,jdbcType=VARCHAR},
+      GLDICJ = #{record.GLDICJ,jdbcType=DECIMAL},
+      GLDSYJ = #{record.GLDSYJ,jdbcType=DECIMAL},
+      GLTICU = #{record.GLTICU,jdbcType=DECIMAL},
+      GLCO = #{record.GLCO,jdbcType=VARCHAR},
+      GLANI = #{record.GLANI,jdbcType=VARCHAR},
+      GLAM = #{record.GLAM,jdbcType=VARCHAR},
+      GLAID = #{record.GLAID,jdbcType=VARCHAR},
+      GLMCU = #{record.GLMCU,jdbcType=VARCHAR},
+      GLOBJ = #{record.GLOBJ,jdbcType=VARCHAR},
+      GLSUB = #{record.GLSUB,jdbcType=VARCHAR},
+      GLSBL = #{record.GLSBL,jdbcType=VARCHAR},
+      GLSBLT = #{record.GLSBLT,jdbcType=VARCHAR},
+      GLLT = #{record.GLLT,jdbcType=VARCHAR},
+      GLPN = #{record.GLPN,jdbcType=DECIMAL},
+      GLCTRY = #{record.GLCTRY,jdbcType=DECIMAL},
+      GLFY = #{record.GLFY,jdbcType=DECIMAL},
+      GLFQ = #{record.GLFQ,jdbcType=VARCHAR},
+      GLCRCD = #{record.GLCRCD,jdbcType=VARCHAR},
+      GLCRR = #{record.GLCRR,jdbcType=DECIMAL},
+      GLHCRR = #{record.GLHCRR,jdbcType=DECIMAL},
+      GLHDGJ = #{record.GLHDGJ,jdbcType=DECIMAL},
+      GLAA = #{record.GLAA,jdbcType=DECIMAL},
+      GLU = #{record.GLU,jdbcType=DECIMAL},
+      GLUM = #{record.GLUM,jdbcType=VARCHAR},
+      GLGLC = #{record.GLGLC,jdbcType=VARCHAR},
+      GLRE = #{record.GLRE,jdbcType=VARCHAR},
+      GLEXA = #{record.GLEXA,jdbcType=VARCHAR},
+      GLEXR = #{record.GLEXR,jdbcType=VARCHAR},
+      GLR1 = #{record.GLR1,jdbcType=VARCHAR},
+      GLR2 = #{record.GLR2,jdbcType=VARCHAR},
+      GLR3 = #{record.GLR3,jdbcType=VARCHAR},
+      GLSFX = #{record.GLSFX,jdbcType=VARCHAR},
+      GLODOC = #{record.GLODOC,jdbcType=DECIMAL},
+      GLODCT = #{record.GLODCT,jdbcType=VARCHAR},
+      GLOSFX = #{record.GLOSFX,jdbcType=VARCHAR},
+      GLPKCO = #{record.GLPKCO,jdbcType=VARCHAR},
+      GLOKCO = #{record.GLOKCO,jdbcType=VARCHAR},
+      GLPDCT = #{record.GLPDCT,jdbcType=VARCHAR},
+      GLAN8 = #{record.GLAN8,jdbcType=DECIMAL},
+      GLCN = #{record.GLCN,jdbcType=VARCHAR},
+      GLDKJ = #{record.GLDKJ,jdbcType=DECIMAL},
+      GLDKC = #{record.GLDKC,jdbcType=DECIMAL},
+      GLASID = #{record.GLASID,jdbcType=VARCHAR},
+      GLBRE = #{record.GLBRE,jdbcType=VARCHAR},
+      GLRCND = #{record.GLRCND,jdbcType=VARCHAR},
+      GLSUMM = #{record.GLSUMM,jdbcType=VARCHAR},
+      GLPRGE = #{record.GLPRGE,jdbcType=VARCHAR},
+      GLTNN = #{record.GLTNN,jdbcType=VARCHAR},
+      GLALT1 = #{record.GLALT1,jdbcType=VARCHAR},
+      GLALT2 = #{record.GLALT2,jdbcType=VARCHAR},
+      GLALT3 = #{record.GLALT3,jdbcType=VARCHAR},
+      GLALT4 = #{record.GLALT4,jdbcType=VARCHAR},
+      GLALT5 = #{record.GLALT5,jdbcType=VARCHAR},
+      GLALT6 = #{record.GLALT6,jdbcType=VARCHAR},
+      GLALT7 = #{record.GLALT7,jdbcType=VARCHAR},
+      GLALT8 = #{record.GLALT8,jdbcType=VARCHAR},
+      GLALT9 = #{record.GLALT9,jdbcType=VARCHAR},
+      GLALT0 = #{record.GLALT0,jdbcType=VARCHAR},
+      GLALTT = #{record.GLALTT,jdbcType=VARCHAR},
+      GLALTU = #{record.GLALTU,jdbcType=VARCHAR},
+      GLALTV = #{record.GLALTV,jdbcType=VARCHAR},
+      GLALTW = #{record.GLALTW,jdbcType=VARCHAR},
+      GLALTX = #{record.GLALTX,jdbcType=VARCHAR},
+      GLALTZ = #{record.GLALTZ,jdbcType=VARCHAR},
+      GLDLNA = #{record.GLDLNA,jdbcType=VARCHAR},
+      GLCFF1 = #{record.GLCFF1,jdbcType=VARCHAR},
+      GLCFF2 = #{record.GLCFF2,jdbcType=VARCHAR},
+      GLASM = #{record.GLASM,jdbcType=VARCHAR},
+      GLBC = #{record.GLBC,jdbcType=VARCHAR},
+      GLVINV = #{record.GLVINV,jdbcType=VARCHAR},
+      GLIVD = #{record.GLIVD,jdbcType=DECIMAL},
+      GLWR01 = #{record.GLWR01,jdbcType=VARCHAR},
+      GLPO = #{record.GLPO,jdbcType=VARCHAR},
+      GLPSFX = #{record.GLPSFX,jdbcType=VARCHAR},
+      GLDCTO = #{record.GLDCTO,jdbcType=VARCHAR},
+      GLLNID = #{record.GLLNID,jdbcType=DECIMAL},
+      GLWY = #{record.GLWY,jdbcType=DECIMAL},
+      GLWN = #{record.GLWN,jdbcType=DECIMAL},
+      GLFNLP = #{record.GLFNLP,jdbcType=VARCHAR},
+      GLOPSQ = #{record.GLOPSQ,jdbcType=DECIMAL},
+      GLJBCD = #{record.GLJBCD,jdbcType=VARCHAR},
+      GLJBST = #{record.GLJBST,jdbcType=VARCHAR},
+      GLHMCU = #{record.GLHMCU,jdbcType=VARCHAR},
+      GLDOI = #{record.GLDOI,jdbcType=DECIMAL},
+      GLALID = #{record.GLALID,jdbcType=VARCHAR},
+      GLALTY = #{record.GLALTY,jdbcType=VARCHAR},
+      GLDSVJ = #{record.GLDSVJ,jdbcType=DECIMAL},
+      GLTORG = #{record.GLTORG,jdbcType=VARCHAR},
+      GLREG# = #{record.GLREG,jdbcType=DECIMAL},
+      GLPYID = #{record.GLPYID,jdbcType=DECIMAL},
+      GLUSER = #{record.GLUSER,jdbcType=VARCHAR},
+      GLPID = #{record.GLPID,jdbcType=VARCHAR},
+      GLJOBN = #{record.GLJOBN,jdbcType=VARCHAR},
+      GLUPMJ = #{record.GLUPMJ,jdbcType=DECIMAL},
+      GLUPMT = #{record.GLUPMT,jdbcType=DECIMAL},
+      GLABR1 = #{record.GLABR1,jdbcType=VARCHAR},
+      GLABR2 = #{record.GLABR2,jdbcType=VARCHAR},
+      GLABR3 = #{record.GLABR3,jdbcType=VARCHAR},
+      GLABR4 = #{record.GLABR4,jdbcType=VARCHAR},
+      GLABT1 = #{record.GLABT1,jdbcType=VARCHAR},
+      GLABT2 = #{record.GLABT2,jdbcType=VARCHAR},
+      GLABT3 = #{record.GLABT3,jdbcType=VARCHAR},
+      GLABT4 = #{record.GLABT4,jdbcType=VARCHAR},
+      GLITM = #{record.GLITM,jdbcType=DECIMAL},
+      GLPM01 = #{record.GLPM01,jdbcType=VARCHAR},
+      GLPM02 = #{record.GLPM02,jdbcType=VARCHAR},
+      GLPM03 = #{record.GLPM03,jdbcType=VARCHAR},
+      GLPM04 = #{record.GLPM04,jdbcType=VARCHAR},
+      GLPM05 = #{record.GLPM05,jdbcType=VARCHAR},
+      GLPM06 = #{record.GLPM06,jdbcType=VARCHAR},
+      GLPM07 = #{record.GLPM07,jdbcType=VARCHAR},
+      GLPM08 = #{record.GLPM08,jdbcType=VARCHAR},
+      GLPM09 = #{record.GLPM09,jdbcType=VARCHAR},
+      GLPM10 = #{record.GLPM10,jdbcType=VARCHAR},
+      GLBCRC = #{record.GLBCRC,jdbcType=VARCHAR},
+      GLCRRM = #{record.GLCRRM,jdbcType=VARCHAR},
+      GLPRGF = #{record.GLPRGF,jdbcType=VARCHAR},
+      GLTXA1 = #{record.GLTXA1,jdbcType=VARCHAR},
+      GLEXR1 = #{record.GLEXR1,jdbcType=VARCHAR},
+      GLTXITM = #{record.GLTXITM,jdbcType=DECIMAL},
+      GLACTB = #{record.GLACTB,jdbcType=VARCHAR},
+      GLGPF1 = #{record.GLGPF1,jdbcType=VARCHAR},
+      GLACR = #{record.GLACR,jdbcType=DECIMAL},
+      GLDLNID = #{record.GLDLNID,jdbcType=DECIMAL},
+      GLCKNU = #{record.GLCKNU,jdbcType=VARCHAR},
+      GLBUPC = #{record.GLBUPC,jdbcType=VARCHAR},
+      GLAHBU = #{record.GLAHBU,jdbcType=VARCHAR},
+      GLEPGC = #{record.GLEPGC,jdbcType=VARCHAR},
+      GLJPGC = #{record.GLJPGC,jdbcType=VARCHAR},
+      GLRC5 = #{record.GLRC5,jdbcType=DECIMAL},
+      GLSFXE = #{record.GLSFXE,jdbcType=DECIMAL},
+      GLOFM = #{record.GLOFM,jdbcType=VARCHAR},
+      GLD200 = #{record.GLD200,jdbcType=VARCHAR},
+      GLAG = #{record.GLAG,jdbcType=DECIMAL},
+      GLAAP = #{record.GLAAP,jdbcType=DECIMAL},
+      GLEV01 = #{record.GLEV01,jdbcType=VARCHAR},
+      GLEV02 = #{record.GLEV02,jdbcType=VARCHAR},
+      GLEV03 = #{record.GLEV03,jdbcType=VARCHAR},
+      GLEV04 = #{record.GLEV04,jdbcType=VARCHAR},
+      GLEV05 = #{record.GLEV05,jdbcType=VARCHAR},
+      GLD1 = #{record.GLD1,jdbcType=DECIMAL},
+      GLD2 = #{record.GLD2,jdbcType=DECIMAL},
+      GLD3 = #{record.GLD3,jdbcType=DECIMAL},
+      GLD4 = #{record.GLD4,jdbcType=DECIMAL},
+      GLD5 = #{record.GLD5,jdbcType=DECIMAL},
+      GLSRP1 = #{record.GLSRP1,jdbcType=VARCHAR},
+      GLSRP2 = #{record.GLSRP2,jdbcType=VARCHAR},
+      GLSRP3 = #{record.GLSRP3,jdbcType=VARCHAR},
+      GLSRP4 = #{record.GLSRP4,jdbcType=VARCHAR},
+      GLSRP5 = #{record.GLSRP5,jdbcType=VARCHAR},
+      GLDL01 = #{record.GLDL01,jdbcType=VARCHAR},
+      GLDL02 = #{record.GLDL02,jdbcType=VARCHAR},
+      GLDL03 = #{record.GLDL03,jdbcType=VARCHAR},
+      GLDL04 = #{record.GLDL04,jdbcType=VARCHAR},
+      GLDL05 = #{record.GLDL05,jdbcType=VARCHAR},
+      GLDL06 = #{record.GLDL06,jdbcType=VARCHAR},
+      GLDL07 = #{record.GLDL07,jdbcType=VARCHAR},
+      GLDL08 = #{record.GLDL08,jdbcType=VARCHAR},
+      GLDL09 = #{record.GLDL09,jdbcType=VARCHAR},
+      GLDL10 = #{record.GLDL10,jdbcType=VARCHAR},
+      GLDL11 = #{record.GLDL11,jdbcType=VARCHAR},
+      GLDL12 = #{record.GLDL12,jdbcType=VARCHAR},
+      GLDL13 = #{record.GLDL13,jdbcType=VARCHAR},
+      GLDL14 = #{record.GLDL14,jdbcType=VARCHAR},
+      GLDL15 = #{record.GLDL15,jdbcType=VARCHAR},
+      GLAN11 = #{record.GLAN11,jdbcType=DECIMAL},
+      GLAN12 = #{record.GLAN12,jdbcType=DECIMAL},
+      GLAN13 = #{record.GLAN13,jdbcType=DECIMAL},
+      GLAN14 = #{record.GLAN14,jdbcType=DECIMAL},
+      GLAN15 = #{record.GLAN15,jdbcType=DECIMAL},
+      GLDS01 = #{record.GLDS01,jdbcType=VARCHAR},
+      GLDS02 = #{record.GLDS02,jdbcType=VARCHAR},
+      GLDS03 = #{record.GLDS03,jdbcType=VARCHAR},
+      GLDS04 = #{record.GLDS04,jdbcType=VARCHAR},
+      GLDS05 = #{record.GLDS05,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+</mapper>
