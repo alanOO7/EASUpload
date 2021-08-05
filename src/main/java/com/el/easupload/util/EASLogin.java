@@ -15,29 +15,33 @@ public class EASLogin {
 
         try {
             endpoint = new java.net.URL(Resource.URL_LOGIN);
-            EASLoginProxy proxy = null;
-            proxy = new EASLoginProxyServiceLocator().getEASLogin(endpoint);
+            EASLoginProxy proxy  = new EASLoginProxyServiceLocator().getEASLogin(endpoint);
             return proxy.login(Resource.USERNAME, Resource.PASSWORD, Resource.SLNNAME, Resource.DBCODE,
                     Resource.LANGUAGE, Resource.DBTYPE);
+
         } catch (ServiceException e) {
             e.printStackTrace();
+            return null;
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
-        } finally {
+            return null;
+
+        } catch (RemoteException e) {
+            e.printStackTrace();
             return null;
         }
     }
 
-    public void impVoucher() {
-        WSWSVoucher[] voucher = null;
+    public String[][] impVoucher(WSWSVoucher[] voucher) {
 
+        String[][] ls=null;
         try {
             java.net.URL endpoint = new java.net.URL(Resource.URL_GL);
             int verify = 0;
             int cashflow = 0;
             WSGLWebServiceFacadeSrvProxyServiceLocator locator = new WSGLWebServiceFacadeSrvProxyServiceLocator();
-            locator.getWSGLWebServiceFacade(endpoint).importVoucher(voucher, 0, verify, cashflow);
+            locator.getWSGLWebServiceFacade(endpoint).importVoucher(voucher,0, verify, cashflow);
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -47,6 +51,8 @@ public class EASLogin {
             e.printStackTrace();
         } catch (RemoteException e) {
             e.printStackTrace();
+        }finally {
+            return null;
         }
     }
 }
