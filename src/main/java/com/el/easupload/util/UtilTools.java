@@ -10,7 +10,7 @@ public class UtilTools {
         if(jde==null){
             return "";
         }
-        String time= String.valueOf(jde.intValue());
+        String time= String.valueOf(jde.intValue()-100000);
         if(time.equals("0")){
             return "";
         }

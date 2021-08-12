@@ -251,7 +251,7 @@
     GLDSYJ, GLTICU, GLCO, GLANI, GLAM, GLAID, GLMCU, GLOBJ, GLSUB, GLSBL, GLSBLT, GLLT, 
     GLPN, GLCTRY, GLFY, GLFQ, GLCRCD, GLCRR, GLHCRR, GLHDGJ, GLAA, GLU, GLUM, GLGLC, 
     GLRE, GLEXA, GLEXR, GLR1, GLR2, GLR3, GLSFX, GLODOC, GLODCT, GLOSFX, GLPKCO, GLOKCO, 
-    GLPDCT, GLAN8, GLCN, DECODE(GLDKJ,0,'0',TO_CHAR(TO_DATE( GLDKJ-100000,'YYDDD') ,'yyyy-MM-dd') ) GLDKJ, GLDKC, GLASID, GLBRE, GLRCND, GLSUMM, GLPRGE, GLTNN,
+    GLPDCT, GLAN8, GLCN, GLDKJ, GLDKC, GLASID, GLBRE, GLRCND, GLSUMM, GLPRGE, GLTNN,
     GLALT1, GLALT2, GLALT3, GLALT4, GLALT5, GLALT6, GLALT7, GLALT8, GLALT9, GLALT0, GLALTT, 
     GLALTU, GLALTV, GLALTW, GLALTX, GLALTZ, GLDLNA, GLCFF1, GLCFF2, GLASM, GLBC, GLVINV, 
     GLIVD, GLWR01, GLPO, GLPSFX, GLDCTO, GLLNID, GLWY, GLWN, GLFNLP, GLOPSQ, GLJBCD, 
@@ -1540,555 +1540,555 @@
       <if test="record.GLUKID != null">
         GLUKID = #{record.GLUKID,jdbcType=DECIMAL},
       </if>
-      <if test="record.GLKCO != null">
-        GLKCO = #{record.GLKCO,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDCT != null">
-        GLDCT = #{record.GLDCT,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDOC != null">
-        GLDOC = #{record.GLDOC,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLDGJ != null">
-        GLDGJ = #{record.GLDGJ,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLJELN != null">
-        GLJELN = #{record.GLJELN,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLEXTL != null">
-        GLEXTL = #{record.GLEXTL,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPOST != null">
-        GLPOST = #{record.GLPOST,jdbcType=VARCHAR},
-      </if>
+<!--      <if test="record.GLKCO != null">-->
+<!--        GLKCO = #{record.GLKCO,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDCT != null">-->
+<!--        GLDCT = #{record.GLDCT,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDOC != null">-->
+<!--        GLDOC = #{record.GLDOC,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLDGJ != null">-->
+<!--        GLDGJ = #{record.GLDGJ,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLJELN != null">-->
+<!--        GLJELN = #{record.GLJELN,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLEXTL != null">-->
+<!--        GLEXTL = #{record.GLEXTL,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPOST != null">-->
+<!--        GLPOST = #{record.GLPOST,jdbcType=VARCHAR},-->
+<!--      </if>-->
       <if test="record.GLICU != null">
         GLICU = #{record.GLICU,jdbcType=DECIMAL},
       </if>
-      <if test="record.GLICUT != null">
-        GLICUT = #{record.GLICUT,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDICJ != null">
-        GLDICJ = #{record.GLDICJ,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLDSYJ != null">
-        GLDSYJ = #{record.GLDSYJ,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLTICU != null">
-        GLTICU = #{record.GLTICU,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLCO != null">
-        GLCO = #{record.GLCO,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLANI != null">
-        GLANI = #{record.GLANI,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLAM != null">
-        GLAM = #{record.GLAM,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLAID != null">
-        GLAID = #{record.GLAID,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLMCU != null">
-        GLMCU = #{record.GLMCU,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLOBJ != null">
-        GLOBJ = #{record.GLOBJ,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLSUB != null">
-        GLSUB = #{record.GLSUB,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLSBL != null">
-        GLSBL = #{record.GLSBL,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLSBLT != null">
-        GLSBLT = #{record.GLSBLT,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLLT != null">
-        GLLT = #{record.GLLT,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPN != null">
-        GLPN = #{record.GLPN,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLCTRY != null">
-        GLCTRY = #{record.GLCTRY,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLFY != null">
-        GLFY = #{record.GLFY,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLFQ != null">
-        GLFQ = #{record.GLFQ,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLCRCD != null">
-        GLCRCD = #{record.GLCRCD,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLCRR != null">
-        GLCRR = #{record.GLCRR,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLHCRR != null">
-        GLHCRR = #{record.GLHCRR,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLHDGJ != null">
-        GLHDGJ = #{record.GLHDGJ,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLAA != null">
-        GLAA = #{record.GLAA,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLU != null">
-        GLU = #{record.GLU,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLUM != null">
-        GLUM = #{record.GLUM,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLGLC != null">
-        GLGLC = #{record.GLGLC,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLRE != null">
-        GLRE = #{record.GLRE,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLEXA != null">
-        GLEXA = #{record.GLEXA,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLEXR != null">
-        GLEXR = #{record.GLEXR,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLR1 != null">
-        GLR1 = #{record.GLR1,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLR2 != null">
-        GLR2 = #{record.GLR2,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLR3 != null">
-        GLR3 = #{record.GLR3,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLSFX != null">
-        GLSFX = #{record.GLSFX,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLODOC != null">
-        GLODOC = #{record.GLODOC,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLODCT != null">
-        GLODCT = #{record.GLODCT,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLOSFX != null">
-        GLOSFX = #{record.GLOSFX,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPKCO != null">
-        GLPKCO = #{record.GLPKCO,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLOKCO != null">
-        GLOKCO = #{record.GLOKCO,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPDCT != null">
-        GLPDCT = #{record.GLPDCT,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLAN8 != null">
-        GLAN8 = #{record.GLAN8,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLCN != null">
-        GLCN = #{record.GLCN,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDKJ != null">
-        GLDKJ = #{record.GLDKJ,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLDKC != null">
-        GLDKC = #{record.GLDKC,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLASID != null">
-        GLASID = #{record.GLASID,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLBRE != null">
-        GLBRE = #{record.GLBRE,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLRCND != null">
-        GLRCND = #{record.GLRCND,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLSUMM != null">
-        GLSUMM = #{record.GLSUMM,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPRGE != null">
-        GLPRGE = #{record.GLPRGE,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLTNN != null">
-        GLTNN = #{record.GLTNN,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALT1 != null">
-        GLALT1 = #{record.GLALT1,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALT2 != null">
-        GLALT2 = #{record.GLALT2,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALT3 != null">
-        GLALT3 = #{record.GLALT3,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALT4 != null">
-        GLALT4 = #{record.GLALT4,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALT5 != null">
-        GLALT5 = #{record.GLALT5,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALT6 != null">
-        GLALT6 = #{record.GLALT6,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALT7 != null">
-        GLALT7 = #{record.GLALT7,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALT8 != null">
-        GLALT8 = #{record.GLALT8,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALT9 != null">
-        GLALT9 = #{record.GLALT9,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALT0 != null">
-        GLALT0 = #{record.GLALT0,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALTT != null">
-        GLALTT = #{record.GLALTT,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALTU != null">
-        GLALTU = #{record.GLALTU,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALTV != null">
-        GLALTV = #{record.GLALTV,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALTW != null">
-        GLALTW = #{record.GLALTW,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALTX != null">
-        GLALTX = #{record.GLALTX,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALTZ != null">
-        GLALTZ = #{record.GLALTZ,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDLNA != null">
-        GLDLNA = #{record.GLDLNA,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLCFF1 != null">
-        GLCFF1 = #{record.GLCFF1,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLCFF2 != null">
-        GLCFF2 = #{record.GLCFF2,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLASM != null">
-        GLASM = #{record.GLASM,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLBC != null">
-        GLBC = #{record.GLBC,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLVINV != null">
-        GLVINV = #{record.GLVINV,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLIVD != null">
-        GLIVD = #{record.GLIVD,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLWR01 != null">
-        GLWR01 = #{record.GLWR01,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPO != null">
-        GLPO = #{record.GLPO,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPSFX != null">
-        GLPSFX = #{record.GLPSFX,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDCTO != null">
-        GLDCTO = #{record.GLDCTO,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLLNID != null">
-        GLLNID = #{record.GLLNID,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLWY != null">
-        GLWY = #{record.GLWY,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLWN != null">
-        GLWN = #{record.GLWN,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLFNLP != null">
-        GLFNLP = #{record.GLFNLP,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLOPSQ != null">
-        GLOPSQ = #{record.GLOPSQ,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLJBCD != null">
-        GLJBCD = #{record.GLJBCD,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLJBST != null">
-        GLJBST = #{record.GLJBST,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLHMCU != null">
-        GLHMCU = #{record.GLHMCU,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDOI != null">
-        GLDOI = #{record.GLDOI,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLALID != null">
-        GLALID = #{record.GLALID,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLALTY != null">
-        GLALTY = #{record.GLALTY,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDSVJ != null">
-        GLDSVJ = #{record.GLDSVJ,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLTORG != null">
-        GLTORG = #{record.GLTORG,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLREG != null">
-        GLREG# = #{record.GLREG,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLPYID != null">
-        GLPYID = #{record.GLPYID,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLUSER != null">
-        GLUSER = #{record.GLUSER,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPID != null">
-        GLPID = #{record.GLPID,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLJOBN != null">
-        GLJOBN = #{record.GLJOBN,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLUPMJ != null">
-        GLUPMJ = #{record.GLUPMJ,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLUPMT != null">
-        GLUPMT = #{record.GLUPMT,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLABR1 != null">
-        GLABR1 = #{record.GLABR1,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLABR2 != null">
-        GLABR2 = #{record.GLABR2,jdbcType=VARCHAR},
-      </if>
+<!--      <if test="record.GLICUT != null">-->
+<!--        GLICUT = #{record.GLICUT,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDICJ != null">-->
+<!--        GLDICJ = #{record.GLDICJ,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLDSYJ != null">-->
+<!--        GLDSYJ = #{record.GLDSYJ,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLTICU != null">-->
+<!--        GLTICU = #{record.GLTICU,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLCO != null">-->
+<!--        GLCO = #{record.GLCO,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLANI != null">-->
+<!--        GLANI = #{record.GLANI,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLAM != null">-->
+<!--        GLAM = #{record.GLAM,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLAID != null">-->
+<!--        GLAID = #{record.GLAID,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLMCU != null">-->
+<!--        GLMCU = #{record.GLMCU,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLOBJ != null">-->
+<!--        GLOBJ = #{record.GLOBJ,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLSUB != null">-->
+<!--        GLSUB = #{record.GLSUB,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLSBL != null">-->
+<!--        GLSBL = #{record.GLSBL,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLSBLT != null">-->
+<!--        GLSBLT = #{record.GLSBLT,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLLT != null">-->
+<!--        GLLT = #{record.GLLT,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPN != null">-->
+<!--        GLPN = #{record.GLPN,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLCTRY != null">-->
+<!--        GLCTRY = #{record.GLCTRY,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLFY != null">-->
+<!--        GLFY = #{record.GLFY,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLFQ != null">-->
+<!--        GLFQ = #{record.GLFQ,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLCRCD != null">-->
+<!--        GLCRCD = #{record.GLCRCD,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLCRR != null">-->
+<!--        GLCRR = #{record.GLCRR,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLHCRR != null">-->
+<!--        GLHCRR = #{record.GLHCRR,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLHDGJ != null">-->
+<!--        GLHDGJ = #{record.GLHDGJ,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLAA != null">-->
+<!--        GLAA = #{record.GLAA,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLU != null">-->
+<!--        GLU = #{record.GLU,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLUM != null">-->
+<!--        GLUM = #{record.GLUM,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLGLC != null">-->
+<!--        GLGLC = #{record.GLGLC,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLRE != null">-->
+<!--        GLRE = #{record.GLRE,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLEXA != null">-->
+<!--        GLEXA = #{record.GLEXA,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLEXR != null">-->
+<!--        GLEXR = #{record.GLEXR,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLR1 != null">-->
+<!--        GLR1 = #{record.GLR1,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLR2 != null">-->
+<!--        GLR2 = #{record.GLR2,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLR3 != null">-->
+<!--        GLR3 = #{record.GLR3,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLSFX != null">-->
+<!--        GLSFX = #{record.GLSFX,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLODOC != null">-->
+<!--        GLODOC = #{record.GLODOC,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLODCT != null">-->
+<!--        GLODCT = #{record.GLODCT,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLOSFX != null">-->
+<!--        GLOSFX = #{record.GLOSFX,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPKCO != null">-->
+<!--        GLPKCO = #{record.GLPKCO,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLOKCO != null">-->
+<!--        GLOKCO = #{record.GLOKCO,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPDCT != null">-->
+<!--        GLPDCT = #{record.GLPDCT,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLAN8 != null">-->
+<!--        GLAN8 = #{record.GLAN8,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLCN != null">-->
+<!--        GLCN = #{record.GLCN,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDKJ != null">-->
+<!--        GLDKJ = #{record.GLDKJ,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLDKC != null">-->
+<!--        GLDKC = #{record.GLDKC,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLASID != null">-->
+<!--        GLASID = #{record.GLASID,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLBRE != null">-->
+<!--        GLBRE = #{record.GLBRE,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLRCND != null">-->
+<!--        GLRCND = #{record.GLRCND,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLSUMM != null">-->
+<!--        GLSUMM = #{record.GLSUMM,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPRGE != null">-->
+<!--        GLPRGE = #{record.GLPRGE,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLTNN != null">-->
+<!--        GLTNN = #{record.GLTNN,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALT1 != null">-->
+<!--        GLALT1 = #{record.GLALT1,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALT2 != null">-->
+<!--        GLALT2 = #{record.GLALT2,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALT3 != null">-->
+<!--        GLALT3 = #{record.GLALT3,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALT4 != null">-->
+<!--        GLALT4 = #{record.GLALT4,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALT5 != null">-->
+<!--        GLALT5 = #{record.GLALT5,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALT6 != null">-->
+<!--        GLALT6 = #{record.GLALT6,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALT7 != null">-->
+<!--        GLALT7 = #{record.GLALT7,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALT8 != null">-->
+<!--        GLALT8 = #{record.GLALT8,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALT9 != null">-->
+<!--        GLALT9 = #{record.GLALT9,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALT0 != null">-->
+<!--        GLALT0 = #{record.GLALT0,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALTT != null">-->
+<!--        GLALTT = #{record.GLALTT,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALTU != null">-->
+<!--        GLALTU = #{record.GLALTU,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALTV != null">-->
+<!--        GLALTV = #{record.GLALTV,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALTW != null">-->
+<!--        GLALTW = #{record.GLALTW,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALTX != null">-->
+<!--        GLALTX = #{record.GLALTX,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALTZ != null">-->
+<!--        GLALTZ = #{record.GLALTZ,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDLNA != null">-->
+<!--        GLDLNA = #{record.GLDLNA,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLCFF1 != null">-->
+<!--        GLCFF1 = #{record.GLCFF1,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLCFF2 != null">-->
+<!--        GLCFF2 = #{record.GLCFF2,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLASM != null">-->
+<!--        GLASM = #{record.GLASM,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLBC != null">-->
+<!--        GLBC = #{record.GLBC,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLVINV != null">-->
+<!--        GLVINV = #{record.GLVINV,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLIVD != null">-->
+<!--        GLIVD = #{record.GLIVD,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLWR01 != null">-->
+<!--        GLWR01 = #{record.GLWR01,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPO != null">-->
+<!--        GLPO = #{record.GLPO,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPSFX != null">-->
+<!--        GLPSFX = #{record.GLPSFX,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDCTO != null">-->
+<!--        GLDCTO = #{record.GLDCTO,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLLNID != null">-->
+<!--        GLLNID = #{record.GLLNID,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLWY != null">-->
+<!--        GLWY = #{record.GLWY,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLWN != null">-->
+<!--        GLWN = #{record.GLWN,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLFNLP != null">-->
+<!--        GLFNLP = #{record.GLFNLP,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLOPSQ != null">-->
+<!--        GLOPSQ = #{record.GLOPSQ,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLJBCD != null">-->
+<!--        GLJBCD = #{record.GLJBCD,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLJBST != null">-->
+<!--        GLJBST = #{record.GLJBST,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLHMCU != null">-->
+<!--        GLHMCU = #{record.GLHMCU,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDOI != null">-->
+<!--        GLDOI = #{record.GLDOI,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLALID != null">-->
+<!--        GLALID = #{record.GLALID,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLALTY != null">-->
+<!--        GLALTY = #{record.GLALTY,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDSVJ != null">-->
+<!--        GLDSVJ = #{record.GLDSVJ,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLTORG != null">-->
+<!--        GLTORG = #{record.GLTORG,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLREG != null">-->
+<!--        GLREG# = #{record.GLREG,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLPYID != null">-->
+<!--        GLPYID = #{record.GLPYID,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLUSER != null">-->
+<!--        GLUSER = #{record.GLUSER,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPID != null">-->
+<!--        GLPID = #{record.GLPID,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLJOBN != null">-->
+<!--        GLJOBN = #{record.GLJOBN,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLUPMJ != null">-->
+<!--        GLUPMJ = #{record.GLUPMJ,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLUPMT != null">-->
+<!--        GLUPMT = #{record.GLUPMT,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLABR1 != null">-->
+<!--        GLABR1 = #{record.GLABR1,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLABR2 != null">-->
+<!--        GLABR2 = #{record.GLABR2,jdbcType=VARCHAR},-->
+<!--      </if>-->
       <if test="record.GLABR3 != null">
         GLABR3 = #{record.GLABR3,jdbcType=VARCHAR},
       </if>
-      <if test="record.GLABR4 != null">
-        GLABR4 = #{record.GLABR4,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLABT1 != null">
-        GLABT1 = #{record.GLABT1,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLABT2 != null">
-        GLABT2 = #{record.GLABT2,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLABT3 != null">
-        GLABT3 = #{record.GLABT3,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLABT4 != null">
-        GLABT4 = #{record.GLABT4,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLITM != null">
-        GLITM = #{record.GLITM,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLPM01 != null">
-        GLPM01 = #{record.GLPM01,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPM02 != null">
-        GLPM02 = #{record.GLPM02,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPM03 != null">
-        GLPM03 = #{record.GLPM03,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPM04 != null">
-        GLPM04 = #{record.GLPM04,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPM05 != null">
-        GLPM05 = #{record.GLPM05,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPM06 != null">
-        GLPM06 = #{record.GLPM06,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPM07 != null">
-        GLPM07 = #{record.GLPM07,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPM08 != null">
-        GLPM08 = #{record.GLPM08,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPM09 != null">
-        GLPM09 = #{record.GLPM09,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPM10 != null">
-        GLPM10 = #{record.GLPM10,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLBCRC != null">
-        GLBCRC = #{record.GLBCRC,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLCRRM != null">
-        GLCRRM = #{record.GLCRRM,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLPRGF != null">
-        GLPRGF = #{record.GLPRGF,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLTXA1 != null">
-        GLTXA1 = #{record.GLTXA1,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLEXR1 != null">
-        GLEXR1 = #{record.GLEXR1,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLTXITM != null">
-        GLTXITM = #{record.GLTXITM,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLACTB != null">
-        GLACTB = #{record.GLACTB,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLGPF1 != null">
-        GLGPF1 = #{record.GLGPF1,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLACR != null">
-        GLACR = #{record.GLACR,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLDLNID != null">
-        GLDLNID = #{record.GLDLNID,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLCKNU != null">
-        GLCKNU = #{record.GLCKNU,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLBUPC != null">
-        GLBUPC = #{record.GLBUPC,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLAHBU != null">
-        GLAHBU = #{record.GLAHBU,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLEPGC != null">
-        GLEPGC = #{record.GLEPGC,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLJPGC != null">
-        GLJPGC = #{record.GLJPGC,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLRC5 != null">
-        GLRC5 = #{record.GLRC5,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLSFXE != null">
-        GLSFXE = #{record.GLSFXE,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLOFM != null">
-        GLOFM = #{record.GLOFM,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLD200 != null">
-        GLD200 = #{record.GLD200,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLAG != null">
-        GLAG = #{record.GLAG,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLAAP != null">
-        GLAAP = #{record.GLAAP,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLEV01 != null">
-        GLEV01 = #{record.GLEV01,jdbcType=VARCHAR},
-      </if>
+<!--      <if test="record.GLABR4 != null">-->
+<!--        GLABR4 = #{record.GLABR4,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLABT1 != null">-->
+<!--        GLABT1 = #{record.GLABT1,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLABT2 != null">-->
+<!--        GLABT2 = #{record.GLABT2,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLABT3 != null">-->
+<!--        GLABT3 = #{record.GLABT3,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLABT4 != null">-->
+<!--        GLABT4 = #{record.GLABT4,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLITM != null">-->
+<!--        GLITM = #{record.GLITM,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLPM01 != null">-->
+<!--        GLPM01 = #{record.GLPM01,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPM02 != null">-->
+<!--        GLPM02 = #{record.GLPM02,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPM03 != null">-->
+<!--        GLPM03 = #{record.GLPM03,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPM04 != null">-->
+<!--        GLPM04 = #{record.GLPM04,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPM05 != null">-->
+<!--        GLPM05 = #{record.GLPM05,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPM06 != null">-->
+<!--        GLPM06 = #{record.GLPM06,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPM07 != null">-->
+<!--        GLPM07 = #{record.GLPM07,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPM08 != null">-->
+<!--        GLPM08 = #{record.GLPM08,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPM09 != null">-->
+<!--        GLPM09 = #{record.GLPM09,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPM10 != null">-->
+<!--        GLPM10 = #{record.GLPM10,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLBCRC != null">-->
+<!--        GLBCRC = #{record.GLBCRC,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLCRRM != null">-->
+<!--        GLCRRM = #{record.GLCRRM,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLPRGF != null">-->
+<!--        GLPRGF = #{record.GLPRGF,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLTXA1 != null">-->
+<!--        GLTXA1 = #{record.GLTXA1,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLEXR1 != null">-->
+<!--        GLEXR1 = #{record.GLEXR1,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLTXITM != null">-->
+<!--        GLTXITM = #{record.GLTXITM,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLACTB != null">-->
+<!--        GLACTB = #{record.GLACTB,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLGPF1 != null">-->
+<!--        GLGPF1 = #{record.GLGPF1,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLACR != null">-->
+<!--        GLACR = #{record.GLACR,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLDLNID != null">-->
+<!--        GLDLNID = #{record.GLDLNID,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLCKNU != null">-->
+<!--        GLCKNU = #{record.GLCKNU,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLBUPC != null">-->
+<!--        GLBUPC = #{record.GLBUPC,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLAHBU != null">-->
+<!--        GLAHBU = #{record.GLAHBU,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLEPGC != null">-->
+<!--        GLEPGC = #{record.GLEPGC,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLJPGC != null">-->
+<!--        GLJPGC = #{record.GLJPGC,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLRC5 != null">-->
+<!--        GLRC5 = #{record.GLRC5,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLSFXE != null">-->
+<!--        GLSFXE = #{record.GLSFXE,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLOFM != null">-->
+<!--        GLOFM = #{record.GLOFM,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLD200 != null">-->
+<!--        GLD200 = #{record.GLD200,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLAG != null">-->
+<!--        GLAG = #{record.GLAG,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLAAP != null">-->
+<!--        GLAAP = #{record.GLAAP,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLEV01 != null">-->
+<!--        GLEV01 = #{record.GLEV01,jdbcType=VARCHAR},-->
+<!--      </if>-->
       <if test="record.GLEV02 != null">
         GLEV02 = #{record.GLEV02,jdbcType=VARCHAR},
       </if>
-      <if test="record.GLEV03 != null">
-        GLEV03 = #{record.GLEV03,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLEV04 != null">
-        GLEV04 = #{record.GLEV04,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLEV05 != null">
-        GLEV05 = #{record.GLEV05,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLD1 != null">
-        GLD1 = #{record.GLD1,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLD2 != null">
-        GLD2 = #{record.GLD2,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLD3 != null">
-        GLD3 = #{record.GLD3,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLD4 != null">
-        GLD4 = #{record.GLD4,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLD5 != null">
-        GLD5 = #{record.GLD5,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLSRP1 != null">
-        GLSRP1 = #{record.GLSRP1,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLSRP2 != null">
-        GLSRP2 = #{record.GLSRP2,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLSRP3 != null">
-        GLSRP3 = #{record.GLSRP3,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLSRP4 != null">
-        GLSRP4 = #{record.GLSRP4,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLSRP5 != null">
-        GLSRP5 = #{record.GLSRP5,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL01 != null">
-        GLDL01 = #{record.GLDL01,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL02 != null">
-        GLDL02 = #{record.GLDL02,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL03 != null">
-        GLDL03 = #{record.GLDL03,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL04 != null">
-        GLDL04 = #{record.GLDL04,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL05 != null">
-        GLDL05 = #{record.GLDL05,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL06 != null">
-        GLDL06 = #{record.GLDL06,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL07 != null">
-        GLDL07 = #{record.GLDL07,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL08 != null">
-        GLDL08 = #{record.GLDL08,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL09 != null">
-        GLDL09 = #{record.GLDL09,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL10 != null">
-        GLDL10 = #{record.GLDL10,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL11 != null">
-        GLDL11 = #{record.GLDL11,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL12 != null">
-        GLDL12 = #{record.GLDL12,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL13 != null">
-        GLDL13 = #{record.GLDL13,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL14 != null">
-        GLDL14 = #{record.GLDL14,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDL15 != null">
-        GLDL15 = #{record.GLDL15,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLAN11 != null">
-        GLAN11 = #{record.GLAN11,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLAN12 != null">
-        GLAN12 = #{record.GLAN12,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLAN13 != null">
-        GLAN13 = #{record.GLAN13,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLAN14 != null">
-        GLAN14 = #{record.GLAN14,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLAN15 != null">
-        GLAN15 = #{record.GLAN15,jdbcType=DECIMAL},
-      </if>
-      <if test="record.GLDS01 != null">
-        GLDS01 = #{record.GLDS01,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDS02 != null">
-        GLDS02 = #{record.GLDS02,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDS03 != null">
-        GLDS03 = #{record.GLDS03,jdbcType=VARCHAR},
-      </if>
-      <if test="record.GLDS04 != null">
-        GLDS04 = #{record.GLDS04,jdbcType=VARCHAR},
-      </if>
+<!--      <if test="record.GLEV03 != null">-->
+<!--        GLEV03 = #{record.GLEV03,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLEV04 != null">-->
+<!--        GLEV04 = #{record.GLEV04,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLEV05 != null">-->
+<!--        GLEV05 = #{record.GLEV05,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLD1 != null">-->
+<!--        GLD1 = #{record.GLD1,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLD2 != null">-->
+<!--        GLD2 = #{record.GLD2,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLD3 != null">-->
+<!--        GLD3 = #{record.GLD3,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLD4 != null">-->
+<!--        GLD4 = #{record.GLD4,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLD5 != null">-->
+<!--        GLD5 = #{record.GLD5,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLSRP1 != null">-->
+<!--        GLSRP1 = #{record.GLSRP1,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLSRP2 != null">-->
+<!--        GLSRP2 = #{record.GLSRP2,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLSRP3 != null">-->
+<!--        GLSRP3 = #{record.GLSRP3,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLSRP4 != null">-->
+<!--        GLSRP4 = #{record.GLSRP4,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLSRP5 != null">-->
+<!--        GLSRP5 = #{record.GLSRP5,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL01 != null">-->
+<!--        GLDL01 = #{record.GLDL01,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL02 != null">-->
+<!--        GLDL02 = #{record.GLDL02,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL03 != null">-->
+<!--        GLDL03 = #{record.GLDL03,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL04 != null">-->
+<!--        GLDL04 = #{record.GLDL04,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL05 != null">-->
+<!--        GLDL05 = #{record.GLDL05,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL06 != null">-->
+<!--        GLDL06 = #{record.GLDL06,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL07 != null">-->
+<!--        GLDL07 = #{record.GLDL07,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL08 != null">-->
+<!--        GLDL08 = #{record.GLDL08,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL09 != null">-->
+<!--        GLDL09 = #{record.GLDL09,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL10 != null">-->
+<!--        GLDL10 = #{record.GLDL10,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL11 != null">-->
+<!--        GLDL11 = #{record.GLDL11,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL12 != null">-->
+<!--        GLDL12 = #{record.GLDL12,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL13 != null">-->
+<!--        GLDL13 = #{record.GLDL13,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL14 != null">-->
+<!--        GLDL14 = #{record.GLDL14,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDL15 != null">-->
+<!--        GLDL15 = #{record.GLDL15,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLAN11 != null">-->
+<!--        GLAN11 = #{record.GLAN11,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLAN12 != null">-->
+<!--        GLAN12 = #{record.GLAN12,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLAN13 != null">-->
+<!--        GLAN13 = #{record.GLAN13,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLAN14 != null">-->
+<!--        GLAN14 = #{record.GLAN14,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLAN15 != null">-->
+<!--        GLAN15 = #{record.GLAN15,jdbcType=DECIMAL},-->
+<!--      </if>-->
+<!--      <if test="record.GLDS01 != null">-->
+<!--        GLDS01 = #{record.GLDS01,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDS02 != null">-->
+<!--        GLDS02 = #{record.GLDS02,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDS03 != null">-->
+<!--        GLDS03 = #{record.GLDS03,jdbcType=VARCHAR},-->
+<!--      </if>-->
+<!--      <if test="record.GLDS04 != null">-->
+<!--        GLDS04 = #{record.GLDS04,jdbcType=VARCHAR},-->
+<!--      </if>-->
       <if test="record.GLDS05 != null">
         GLDS05 = #{record.GLDS05,jdbcType=VARCHAR},
       </if>

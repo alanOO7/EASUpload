@@ -43,7 +43,7 @@ public class WSBean  implements java.io.Serializable {
         new org.apache.axis.description.TypeDesc(WSBean.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("urn:client.glwebservicefacade", "WSBean"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("urn:client.wsvoucher", "WSBean"));
     }
 
     /**

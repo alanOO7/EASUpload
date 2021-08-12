@@ -1,5 +1,5 @@
 /**
- * EASLoginProxyServiceLocator.java
+ * WSWSVoucherSrvProxyServiceLocator.java
  *
  * This file was auto-generated from WSDL
  * by the Apache Axis 1.4 Apr 22, 2006 (06:55:48 PDT) WSDL2Java emitter.
@@ -7,53 +7,53 @@
 
 package com.el.easupload.ws;
 
-public class EASLoginProxyServiceLocator extends org.apache.axis.client.Service implements EASLoginProxyService {
+public class WSWSVoucherSrvProxyServiceLocator extends org.apache.axis.client.Service implements WSWSVoucherSrvProxyService {
 
-    public EASLoginProxyServiceLocator() {
+    public WSWSVoucherSrvProxyServiceLocator() {
     }
 
 
-    public EASLoginProxyServiceLocator(org.apache.axis.EngineConfiguration config) {
+    public WSWSVoucherSrvProxyServiceLocator(org.apache.axis.EngineConfiguration config) {
         super(config);
     }
 
-    public EASLoginProxyServiceLocator(String wsdlLoc, javax.xml.namespace.QName sName) throws javax.xml.rpc.ServiceException {
+    public WSWSVoucherSrvProxyServiceLocator(String wsdlLoc, javax.xml.namespace.QName sName) throws javax.xml.rpc.ServiceException {
         super(wsdlLoc, sName);
     }
 
-    // Use to get a proxy class for EASUtil
-    private String EASLogin_address = "http://teas.shenyejituan.com:6892/ormrpc/services/EASLogin";
+    // Use to get a proxy class for WSWSVoucher
+    private String WSWSVoucher_address = "http://teas.shenyejituan.com:6892/ormrpc/services/WSWSVoucher";
 
-    public String getEASLoginAddress() {
-        return EASLogin_address;
+    public String getWSWSVoucherAddress() {
+        return WSWSVoucher_address;
     }
 
     // The WSDD service name defaults to the port name.
-    private String EASLoginWSDDServiceName = "EASUtil";
+    private String WSWSVoucherWSDDServiceName = "WSWSVoucher";
 
-    public String getEASLoginWSDDServiceName() {
-        return EASLoginWSDDServiceName;
+    public String getWSWSVoucherWSDDServiceName() {
+        return WSWSVoucherWSDDServiceName;
     }
 
-    public void setEASLoginWSDDServiceName(String name) {
-        EASLoginWSDDServiceName = name;
+    public void setWSWSVoucherWSDDServiceName(String name) {
+        WSWSVoucherWSDDServiceName = name;
     }
 
-    public EASLoginProxy getEASLogin() throws javax.xml.rpc.ServiceException {
+    public WSWSVoucherSrvProxy getWSWSVoucher() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
-            endpoint = new java.net.URL(EASLogin_address);
+            endpoint = new java.net.URL(WSWSVoucher_address);
         }
         catch (java.net.MalformedURLException e) {
             throw new javax.xml.rpc.ServiceException(e);
         }
-        return getEASLogin(endpoint);
+        return getWSWSVoucher(endpoint);
     }
 
-    public EASLoginProxy getEASLogin(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public WSWSVoucherSrvProxy getWSWSVoucher(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            EASLoginSoapBindingStub _stub = new EASLoginSoapBindingStub(portAddress, this);
-            _stub.setPortName(getEASLoginWSDDServiceName());
+            WSWSVoucherSoapBindingStub _stub = new WSWSVoucherSoapBindingStub(portAddress, this);
+            _stub.setPortName(getWSWSVoucherWSDDServiceName());
             return _stub;
         }
         catch (org.apache.axis.AxisFault e) {
@@ -61,8 +61,8 @@ public class EASLoginProxyServiceLocator extends org.apache.axis.client.Service 
         }
     }
 
-    public void setEASLoginEndpointAddress(String address) {
-        EASLogin_address = address;
+    public void setWSWSVoucherEndpointAddress(String address) {
+        WSWSVoucher_address = address;
     }
 
     /**
@@ -72,9 +72,9 @@ public class EASLoginProxyServiceLocator extends org.apache.axis.client.Service 
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (EASLoginProxy.class.isAssignableFrom(serviceEndpointInterface)) {
-                EASLoginSoapBindingStub _stub = new EASLoginSoapBindingStub(new java.net.URL(EASLogin_address), this);
-                _stub.setPortName(getEASLoginWSDDServiceName());
+            if (WSWSVoucherSrvProxy.class.isAssignableFrom(serviceEndpointInterface)) {
+                WSWSVoucherSoapBindingStub _stub = new WSWSVoucherSoapBindingStub(new java.net.URL(WSWSVoucher_address), this);
+                _stub.setPortName(getWSWSVoucherWSDDServiceName());
                 return _stub;
             }
         }
@@ -94,8 +94,8 @@ public class EASLoginProxyServiceLocator extends org.apache.axis.client.Service 
             return getPort(serviceEndpointInterface);
         }
         String inputPortName = portName.getLocalPart();
-        if ("EASUtil".equals(inputPortName)) {
-            return getEASLogin();
+        if ("WSWSVoucher".equals(inputPortName)) {
+            return getWSWSVoucher();
         }
         else  {
             java.rmi.Remote _stub = getPort(serviceEndpointInterface);
@@ -105,7 +105,7 @@ public class EASLoginProxyServiceLocator extends org.apache.axis.client.Service 
     }
 
     public javax.xml.namespace.QName getServiceName() {
-        return new javax.xml.namespace.QName("http://teas.shenyejituan.com:6892/ormrpc/services/EASLogin", "EASLoginProxyService");
+        return new javax.xml.namespace.QName("http://teas.shenyejituan.com:6892/ormrpc/services/WSWSVoucher", "WSWSVoucherSrvProxyService");
     }
 
     private java.util.HashSet ports = null;
@@ -113,7 +113,7 @@ public class EASLoginProxyServiceLocator extends org.apache.axis.client.Service 
     public java.util.Iterator getPorts() {
         if (ports == null) {
             ports = new java.util.HashSet();
-            ports.add(new javax.xml.namespace.QName("http://teas.shenyejituan.com:6892/ormrpc/services/EASLogin", "EASUtil"));
+            ports.add(new javax.xml.namespace.QName("http://teas.shenyejituan.com:6892/ormrpc/services/WSWSVoucher", "WSWSVoucher"));
         }
         return ports.iterator();
     }
@@ -123,8 +123,8 @@ public class EASLoginProxyServiceLocator extends org.apache.axis.client.Service 
     */
     public void setEndpointAddress(String portName, String address) throws javax.xml.rpc.ServiceException {
         
-if ("EASUtil".equals(portName)) {
-            setEASLoginEndpointAddress(address);
+if ("WSWSVoucher".equals(portName)) {
+            setWSWSVoucherEndpointAddress(address);
         }
         else 
 { // Unknown Port Name

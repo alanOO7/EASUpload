@@ -1,6 +1,8 @@
 package com.el.easupload.util;
 
 import com.el.easupload.ws.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.xml.rpc.Service;
 import javax.xml.rpc.ServiceException;
@@ -9,13 +11,15 @@ import java.net.MalformedURLException;
 import java.rmi.RemoteException;
 
 
-public class EASLogin {
+public class EASUtil {
+    private final Logger log = LoggerFactory.getLogger(getClass());
     public WSContext doEASLogin() {
         java.net.URL endpoint = null;
 
         try {
             endpoint = new java.net.URL(Resource.URL_LOGIN);
             EASLoginProxy proxy  = new EASLoginProxyServiceLocator().getEASLogin(endpoint);
+
             return proxy.login(Resource.USERNAME, Resource.PASSWORD, Resource.SLNNAME, Resource.DBCODE,
                     Resource.LANGUAGE, Resource.DBTYPE);
 
@@ -33,26 +37,27 @@ public class EASLogin {
         }
     }
 
-    public String[][] impVoucher(WSWSVoucher[] voucher) {
+    public String[][] impVoucher(WSWSVoucher[] voucher, int verify,int cashflow) {
 
         String[][] ls=null;
         try {
             java.net.URL endpoint = new java.net.URL(Resource.URL_GL);
-            int verify = 0;
-            int cashflow = 0;
-            WSGLWebServiceFacadeSrvProxyServiceLocator locator = new WSGLWebServiceFacadeSrvProxyServiceLocator();
-            locator.getWSGLWebServiceFacade(endpoint).importVoucher(voucher,0, verify, cashflow);
+            WSWSVoucherSrvProxyServiceLocator locator1=new WSWSVoucherSrvProxyServiceLocator();
+            String SessionId=this.doEASLogin().getSessionId();
+            log.info("=========SessionId="+SessionId+" begin=====");
+            WSWSVoucherSoapBindingStub locator = new WSWSVoucherSoapBindingStub(endpoint,locator1);
+            locator.setHeader(Resource.URL_GL,"SessionId",SessionId);
+            ls=locator.importVoucher(voucher, verify, cashflow);
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
-        } catch (ServiceException e) {
-            e.printStackTrace();
+
         } catch (WSInvokeException e) {
             e.printStackTrace();
         } catch (RemoteException e) {
             e.printStackTrace();
         }finally {
-            return null;
+            return ls;
         }
     }
 }
